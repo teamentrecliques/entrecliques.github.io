@@ -9,17 +9,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Titillium Web`,
-            variants: [`300`, `400`, `700`],
-          },
-        ],
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-styled-components`,

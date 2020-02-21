@@ -1,7 +1,7 @@
 import Typography from 'typography';
 const typography = new Typography({
-  baseFontSize: '18px',
-  baseLineHeight: 1.666,
+  baseFontSize: '20px',
+  baseLineHeight: .8,
   headerFontFamily: [
     'Titillium Web',
     'Helvetica Neue',
@@ -17,6 +17,12 @@ const typography = new Typography({
     'Helvetica',
     'Arial',
     'sans-serif',
+  ],
+  googleFonts: [
+    {
+      name: 'Titillium Web',
+      styles: ['300', '400', '700'],
+    },
   ],
 });
 export default typography;
