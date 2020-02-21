@@ -1,13 +1,30 @@
-const siteMetadata = require("./src/config/sitemetadata.config")
+const siteMetadata = require('./src/config/sitemetadata.config');
 
 module.exports = {
   siteMetadata,
   plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Titillium Web`,
+            variants: [`300`, `400`, `700`],
+          },
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        displayName: process.env.NODE_ENV === "development" ? true : false,
+        displayName: process.env.NODE_ENV === 'development' ? true : false,
       },
     },
     {
@@ -33,4 +50,4 @@ module.exports = {
     },
     // `gatsby-plugin-offline`,
   ],
-}
+};
