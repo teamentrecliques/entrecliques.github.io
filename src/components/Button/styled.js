@@ -13,13 +13,13 @@ export const Button = styled.button`
 
   &::before {
     content: '';
-    border: 5px solid ${props => props.theme.highlight.hex()};
-    height: calc(100% + 20px);
-    left: -10px;
+    border: 3px solid ${props => props.theme.highlight.hex()};
+    height: calc(100% + 14px);
+    left: -7px;
     position: absolute;
-    top: -10px;
+    top: -7px;
     transition: border 300ms ease;
-    width: calc(100% + 20px);
+    width: calc(100% + 14px);
   }
 
   &:hover {
@@ -32,7 +32,6 @@ export const Button = styled.button`
 `;
 
 export const ButtonText = styled.p`
-  font-size: 26px;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
