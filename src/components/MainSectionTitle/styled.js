@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const TopText = styled.p`
   color: ${props => props.theme.secondary};
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: 300;
 `;
 

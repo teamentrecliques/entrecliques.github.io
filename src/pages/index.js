@@ -4,14 +4,17 @@ import { Link } from 'gatsby';
 import Index from '../components/Layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
+import Button from '../components/Button/button';
+import Menu from '../components/Menu/menu';
+import MainSectionTitle from '../components/MainSectionTitle/mainsectiontitle';
 
 const IndexPage = () => (
   <Index>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <MainSectionTitle />
+    <Menu />
+    <Button>Call to action</Button>
+    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>

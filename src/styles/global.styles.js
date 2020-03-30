@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   -webkit-text-size-adjust: 100%;
   }
   body {
+    background-color: ${props => props.theme.dark};
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

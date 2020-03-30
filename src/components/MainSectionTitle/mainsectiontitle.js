@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import Layout from '../Layout';
 import * as S from './styled';
 
-const MainSectionTitle = ({ children }) => (
+const MainSectionTitle = () => (
   <S.Container>
     <S.TopText>está buscando os</S.TopText>
     <S.StrongText className="secondary">Melhores</S.StrongText>
     <S.StrongText>Resultados</S.StrongText>
     <S.RegularText>Online?</S.RegularText>
-    <S.StrongText>{children}</S.StrongText>
   </S.Container>
 );
 
