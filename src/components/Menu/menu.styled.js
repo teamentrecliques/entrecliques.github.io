@@ -22,7 +22,9 @@ export const Menu = styled.div`
     min-height: 100vh;
 
     ul {
-      display: block;
+      transition: opacity 300ms ease-out;
+      opacity: 1;
+      height: auto;
     }
 
     .logo {

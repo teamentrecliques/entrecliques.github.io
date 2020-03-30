@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-  display: none;
+  height: 0;
   list-style: none;
+  overflow: hidden;
+  opacity: 0;
   margin: 0;
   padding: 10px 10px;
-  transform-origin: top;
-  transition: transform 300ms ease;
+  transition: opacity 300ms ease-out;
 `;
