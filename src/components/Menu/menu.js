@@ -9,7 +9,7 @@ const Menu = () => {
   const [hover, setHover] = useState(false);
 
   const data = useStaticQuery(graphql`
-    query Test {
+    query QLogo {
       file(relativePath: { eq: "q-icon.png" }) {
         childImageSharp {
           fixed(width: 59, height: 59) {
@@ -18,7 +18,7 @@ const Menu = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <S.Menu

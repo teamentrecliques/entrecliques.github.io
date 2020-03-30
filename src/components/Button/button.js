@@ -1,5 +1,5 @@
 import React from 'react';
-import * as S from './styled';
+import * as S from './button.styled';
 
 const Button = props => (
   <S.Button>
