@@ -22,7 +22,7 @@ export const Menu = styled.div`
     min-height: 100vh;
 
     ul {
-      transform: scaleY(1);
+      display: block;
     }
 
     .logo {
