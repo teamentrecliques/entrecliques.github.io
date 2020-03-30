@@ -13,6 +13,7 @@ export const Menu = styled.div`
   position: fixed;
   top: 0;
   transition: min-height 0.3s ease-out;
+  z-index: 9999;
 
   .logo {
     transition: transform 300ms ease;
