@@ -3,7 +3,7 @@ import svg from '../../../images/curve.svg';
 
 export const BgCurve = styled.div`
   background-image: url(${svg});
-  background-size: 100% 100%;
+  background-size: 102% 102%;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
