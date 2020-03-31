@@ -7,6 +7,7 @@ import Menu from '../components/Menu/menu';
 import MainSectionTitle from '../components/MainSectionTitle/mainsectiontitle';
 import MainSectionText from '../components/MainSectionText/mainsectiontext';
 import Section from '../components/Section/section';
+import BgCurve from '../components/BgCurve/bgcurve';
 
 const IndexPage = () => {
   return (
@@ -19,6 +20,7 @@ const IndexPage = () => {
           <MainSectionText />
           <Button>Call to action</Button>
         </div>
+        <BgCurve/>
       </Section>
     </Index>
   );

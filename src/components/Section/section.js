@@ -1,6 +1,5 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
 import * as S from './section.styled';
 
 const Section = props => {
@@ -19,7 +18,7 @@ const Section = props => {
   return (
     <S.Section
       Tag="section"
-      className={ props.type == 'main' ? 'main' : ''}
+      className={ props.type === 'main' ? 'main' : ''}
       fluid={data.desktop.childImageSharp.fluid}
       backgroundColor="#181818"
     >{props.children}

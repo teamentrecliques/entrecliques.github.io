@@ -7,6 +7,7 @@ export const Section = styled(BackgroundImage)`
   height: 100vh;
   justify-content: space-between;
   min-height: 768px;
+  overflow-x: hidden;
   padding: 4rem;
   width: 100%;
 

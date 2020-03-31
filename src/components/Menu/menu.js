@@ -27,7 +27,7 @@ const Menu = () => {
       onMouseLeave={() => setHover(false)}
     >
       <List>
-        <ListItem sectionUrl="#">nos te ajudamos</ListItem>
+        <ListItem sectionUrl="#">nós te ajudamos</ListItem>
         <ListItem sectionUrl="#">produtos</ListItem>
         <ListItem sectionUrl="#">clientes</ListItem>
         <ListItem sectionUrl="#">o que fazemos</ListItem>
