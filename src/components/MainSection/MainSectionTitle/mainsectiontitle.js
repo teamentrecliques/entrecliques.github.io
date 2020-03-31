@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Layout from '../Layout';
+import Layout from '../../Layout';
 import * as S from './mainsectiontitle.styled';
 
 const MainSectionTitle = () => (

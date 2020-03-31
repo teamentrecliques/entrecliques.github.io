@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import svg from '../../images/curve.svg';
+import svg from '../../../images/curve.svg';
 
 export const BgCurve = styled.div`
   background-image: url(${svg});

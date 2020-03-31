@@ -1,8 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import * as S from './section.styled';
+import * as S from './mainsection.styled';
 
-const Section = props => {
+const MainSection = props => {
   const data = useStaticQuery(graphql`
     query BgImg {
       desktop: file(relativePath: { eq: "waves-bg.png" }) {
@@ -16,15 +16,14 @@ const Section = props => {
   `);
 
   return (
-    <S.Section
+    <S.MainSection
       Tag="section"
-      className={ props.type === 'main' ? 'main' : ''}
       fluid={data.desktop.childImageSharp.fluid}
       backgroundColor="#181818"
     >{props.children}
-    </S.Section>
+    </S.MainSection>
   );
 };
 
 
-export default Section;
+export default MainSection;

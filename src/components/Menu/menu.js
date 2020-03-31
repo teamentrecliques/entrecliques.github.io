@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import List from './Components/list';
-import ListItem from './Components/listitem';
+import List from './List/list';
+import ListItem from './List/listitem';
 import * as S from './menu.styled';
 
 const Menu = () => {
