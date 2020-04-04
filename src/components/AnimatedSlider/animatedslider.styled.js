@@ -9,7 +9,7 @@ export const CustomSlider = styled(Slider)`
 
   a.previousButton,
   a.nextButton {
-    border: 2px solid ${props => props.theme.dark.hex()};
+    border: 2px solid ${props => props.theme.secondary.hex()};
     font-size: 1rem;
     line-height: 0;
     display: block;
@@ -25,7 +25,8 @@ export const CustomSlider = styled(Slider)`
 
   a.previousButton:not(.disabled):hover,
   a.nextButton:not(.disabled):hover {
-    background-color: ${props => props.theme.primary.hex()};
+    background-color: ${props => props.theme.secondary.alpha(0.5)};
+    color: ${props => props.theme.secondary.hex()};
     cursor: pointer;
   }
 
@@ -47,6 +48,10 @@ export const CustomSlider = styled(Slider)`
     opacity: 0.5;
   }
 
+  a>svg>polygon{
+    fill: ${props => props.theme.secondary.hex()};
+  }
+
 .slide {
   display: flex;
   color: ${props => props.theme.dark.hex()};
@@ -55,6 +60,10 @@ export const CustomSlider = styled(Slider)`
   position: absolute;
   overflow: hidden;
   width: 100%;
+}
+
+.slide>div {
+  width: 50%;
 }
 
 .slide.hidden {

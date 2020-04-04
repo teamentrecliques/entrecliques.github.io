@@ -10,6 +10,7 @@ import MainSection from '../components/MainSection/mainsection';
 import BgCurve from '../components/MainSection/BgCurve/bgcurve';
 import Section from '../components/Section/section';
 import AnimatedSlider from '../components/AnimatedSlider/animatedslider';
+import BgYellowBlack from '../components/Section/Backgrounds/BgYellowBlack/bgyellowblack';
 
 const IndexPage = () => {
   const slides = [
@@ -35,10 +36,6 @@ const IndexPage = () => {
     },
   ];
 
-  const divStyle = {
-    width: '50%',
-  };
-
   return (
     <Index>
       <SEO title="Home" />
@@ -56,11 +53,27 @@ const IndexPage = () => {
       <Section title="o que fazemos">
         <AnimatedSlider>
           {slides.map((slide, index) => <div key={index}>
-            <div style={divStyle}>
+            <div>
               <h2>{slide.title}</h2>
               <div>{slide.description}</div>
             </div>
-            <div style={divStyle}>
+            <div>
+              <h2>{slide.title}</h2>
+              <div>{slide.description}</div>
+            </div>
+          </div>)}
+        </AnimatedSlider>
+        <BgYellowBlack/>
+      </Section>
+
+      <Section title="produtos">
+        <AnimatedSlider>
+          {slides.map((slide, index) => <div key={index}>
+            <div>
+              <h2>{slide.title}</h2>
+              <div>{slide.description}</div>
+            </div>
+            <div>
               <h2>{slide.title}</h2>
               <div>{slide.description}</div>
             </div>
@@ -68,12 +81,19 @@ const IndexPage = () => {
         </AnimatedSlider>
       </Section>
 
-      <Section title="produtos">
-
-      </Section>
-
       <Section title="clientes">
-
+        <AnimatedSlider>
+          {slides.map((slide, index) => <div key={index}>
+            <div>
+              <h2>{slide.title}</h2>
+              <div>{slide.description}</div>
+            </div>
+            <div>
+              <h2>{slide.title}</h2>
+              <div>{slide.description}</div>
+            </div>
+          </div>)}
+        </AnimatedSlider>
       </Section>
 
     </Index>
