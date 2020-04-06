@@ -6,6 +6,7 @@ export const CustomSlider = styled(Slider)`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 999;
 
   a.previousButton,
   a.nextButton {
@@ -17,10 +18,10 @@ export const CustomSlider = styled(Slider)`
     top: 90%;
     transform: translateY(-50%);
     transition: all 0.3s linear;
-    z-index: 999;
     color: ${props => props.theme.secondary.hex()};
     text-decoration: none;
     backface-visibility: hidden;
+    z-index: 999;
   }
 
   a.previousButton:not(.disabled):hover,
@@ -54,7 +55,7 @@ export const CustomSlider = styled(Slider)`
 
 .slide {
   display: flex;
-  color: ${props => props.theme.dark.hex()};
+  color: ${props => props.theme.textcolor.hex()};
   height: 100%;
   padding: 10rem 4rem 4rem 6rem;
   position: absolute;
@@ -64,6 +65,7 @@ export const CustomSlider = styled(Slider)`
 
 .slide>div {
   width: 50%;
+  padding: 1rem;
 }
 
 .slide.hidden {

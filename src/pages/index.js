@@ -11,6 +11,8 @@ import BgCurve from '../components/MainSection/BgCurve/bgcurve';
 import Section from '../components/Section/section';
 import AnimatedSlider from '../components/AnimatedSlider/animatedslider';
 import BgYellowBlack from '../components/Section/Backgrounds/BgYellowBlack/bgyellowblack';
+import BgGrayscale from '../components/Section/Backgrounds/BgGrayscale/bggrayscale';
+import BgYellowGray from '../components/Section/Backgrounds/BgYellowGray/bgyellowgray';
 
 const IndexPage = () => {
   const slides = [
@@ -51,7 +53,7 @@ const IndexPage = () => {
       </MainSection>
 
       <Section title="o que fazemos">
-        <AnimatedSlider>
+        <AnimatedSlider color="#fff" textcolor="#131313">
           {slides.map((slide, index) => <div key={index}>
             <div>
               <h2>{slide.title}</h2>
@@ -67,7 +69,7 @@ const IndexPage = () => {
       </Section>
 
       <Section title="produtos">
-        <AnimatedSlider>
+        <AnimatedSlider color="#fff" textcolor="#fff">
           {slides.map((slide, index) => <div key={index}>
             <div>
               <h2>{slide.title}</h2>
@@ -79,10 +81,11 @@ const IndexPage = () => {
             </div>
           </div>)}
         </AnimatedSlider>
+        <BgGrayscale/>
       </Section>
 
       <Section title="clientes">
-        <AnimatedSlider>
+        <AnimatedSlider color="#131313" textcolor="#fff">
           {slides.map((slide, index) => <div key={index}>
             <div>
               <h2>{slide.title}</h2>
@@ -94,6 +97,7 @@ const IndexPage = () => {
             </div>
           </div>)}
         </AnimatedSlider>
+        <BgYellowGray/>
       </Section>
 
     </Index>

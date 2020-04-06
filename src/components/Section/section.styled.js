@@ -17,4 +17,5 @@ export const Title = styled.h3`
   position: absolute;
   text-transform: uppercase;
   top: 4rem;
+  z-index: 999;
 `;
