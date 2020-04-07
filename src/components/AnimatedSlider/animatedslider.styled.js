@@ -10,7 +10,7 @@ export const CustomSlider = styled(Slider)`
 
   a.previousButton,
   a.nextButton {
-    border: 2px solid ${props => props.theme.secondary.hex()};
+    border: 2px solid ${props => props.theme.main.hex()};
     font-size: 1rem;
     line-height: 0;
     display: block;
@@ -18,7 +18,7 @@ export const CustomSlider = styled(Slider)`
     top: 90%;
     transform: translateY(-50%);
     transition: all 0.3s linear;
-    color: ${props => props.theme.secondary.hex()};
+    color: ${props => props.theme.main.hex()};
     text-decoration: none;
     backface-visibility: hidden;
     z-index: 999;
@@ -26,8 +26,8 @@ export const CustomSlider = styled(Slider)`
 
   a.previousButton:not(.disabled):hover,
   a.nextButton:not(.disabled):hover {
-    background-color: ${props => props.theme.secondary.alpha(0.5)};
-    color: ${props => props.theme.secondary.hex()};
+    background-color: ${props => props.theme.main.alpha(0.5)};
+    color: ${props => props.theme.main.hex()};
     cursor: pointer;
   }
 
@@ -50,12 +50,11 @@ export const CustomSlider = styled(Slider)`
   }
 
   a>svg>polygon{
-    fill: ${props => props.theme.secondary.hex()};
+    fill: ${props => props.theme.main.hex()};
   }
 
 .slide {
   display: flex;
-  color: ${props => props.theme.textcolor.hex()};
   height: 100%;
   padding: 10rem 4rem 4rem 6rem;
   position: absolute;

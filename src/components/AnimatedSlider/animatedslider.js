@@ -4,7 +4,7 @@ import * as S from './animatedslider.styled';
 
 const AnimatedSlider = props => (
   <S.CustomSlider
-    theme={{ secondary: chroma(props.color), textcolor: chroma(props.textcolor) }}
+    theme={{ main: chroma(props.color) }}
     onSlideChange={event => console.log(event.slideIndex)}
   >
     {props.children}

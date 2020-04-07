@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Data from '../data/slides';
 
 import Index from '../components/Layout';
 import SEO from '../components/seo';
@@ -13,31 +14,11 @@ import AnimatedSlider from '../components/AnimatedSlider/animatedslider';
 import BgYellowBlack from '../components/Section/Backgrounds/BgYellowBlack/bgyellowblack';
 import BgGrayscale from '../components/Section/Backgrounds/BgGrayscale/bggrayscale';
 import BgYellowGray from '../components/Section/Backgrounds/BgYellowGray/bgyellowgray';
+import IllustrationContent from '../components/AnimatedSlider/IllustrationContent/illustrationcontent';
+import TextContent from '../components/Section/TextContent/textcontent';
+import { DefaultTheme } from '../styles';
 
 const IndexPage = () => {
-  const slides = [
-    {
-      title: 'Lorem ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ',
-    },
-    {
-      title: 'Lorem Ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ',
-    },
-    {
-      title: 'Lorem Ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ',
-    },
-    {
-      title: 'Lorem Ipsum',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ',
-    },
-  ];
-
   return (
     <Index>
       <SEO title="Home" />
@@ -53,24 +34,24 @@ const IndexPage = () => {
       </MainSection>
 
       <Section title="o que fazemos">
-        <AnimatedSlider color="#fff" textcolor="#131313">
-          {slides.map((slide, index) => <div key={index}>
-            <div>
-              <h2>{slide.title}</h2>
-              <div>{slide.description}</div>
-            </div>
-            <div>
-              <h2>{slide.title}</h2>
-              <div>{slide.description}</div>
-            </div>
+        <AnimatedSlider color="#fff">
+          {Data.whatWeDo.map((slide, index) => <div key={index}>
+            <TextContent
+              title={slide.title}
+              bodycolor={DefaultTheme.dark.hex()}
+              titlecolor={DefaultTheme.dark.hex()}
+            >
+              {slide.description}
+            </TextContent>
+            <IllustrationContent image={slide.image} />
           </div>)}
         </AnimatedSlider>
         <BgYellowBlack/>
       </Section>
 
       <Section title="produtos">
-        <AnimatedSlider color="#fff" textcolor="#fff">
-          {slides.map((slide, index) => <div key={index}>
+        <AnimatedSlider color={DefaultTheme.secondary.hex()}>
+          {Data.products.map((slide, index) => <div key={index}>
             <div>
               <h2>{slide.title}</h2>
               <div>{slide.description}</div>
@@ -81,12 +62,12 @@ const IndexPage = () => {
             </div>
           </div>)}
         </AnimatedSlider>
-        <BgGrayscale/>
+        <BgGrayscale />
       </Section>
 
       <Section title="clientes">
-        <AnimatedSlider color="#131313" textcolor="#fff">
-          {slides.map((slide, index) => <div key={index}>
+        <AnimatedSlider color={DefaultTheme.dark.hex()}>
+          {Data.clients.map((slide, index) => <div key={index}>
             <div>
               <h2>{slide.title}</h2>
               <div>{slide.description}</div>
@@ -97,10 +78,10 @@ const IndexPage = () => {
             </div>
           </div>)}
         </AnimatedSlider>
-        <BgYellowGray/>
+        <BgYellowGray />
       </Section>
-
     </Index>
   );
 };
+
 export default IndexPage;

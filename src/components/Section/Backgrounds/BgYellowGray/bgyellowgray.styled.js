@@ -14,7 +14,7 @@ export const Background = styled.div`
     content: '';
     position: absolute;
     right: 0;
-    width: 49vw;
+    width: 48.5vw;
     overflow: hidden;
     z-index: 0;
     height: 100%;
