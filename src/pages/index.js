@@ -63,7 +63,7 @@ const IndexPage = () => {
               {slide.description}
             </TextContent>
             <div>
-              <Card/>
+              <Card image={slide.image}/>
             </div>
           </div>)}
         </AnimatedSlider>

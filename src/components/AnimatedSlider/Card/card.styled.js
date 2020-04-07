@@ -9,6 +9,11 @@ export const Card = styled.div`
   transition: box-shadow 300ms ease;
   width: 15rem;
 
+  .image {
+    z-index: 99;
+    height: 100%;
+  }
+
   &:after {
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
     background-color: ${props => props.theme.secondary.hex()};
@@ -18,6 +23,7 @@ export const Card = styled.div`
     position: absolute;
     transition: height 300ms ease, clip-path 300ms ease;
     width: 100%;
+    z-index: 999;
   }
 
   &:hover {

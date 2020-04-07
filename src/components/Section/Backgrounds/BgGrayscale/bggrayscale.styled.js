@@ -11,7 +11,7 @@ export const BgGrayscale = styled.div`
   z-index: 0;
 
   .arrows {
-    animation: 3s infinite alternate fade;
+    animation: 10s infinite alternate fade;
     height: 100%;
     margin-left: 50vw;
     width: 50vw;
