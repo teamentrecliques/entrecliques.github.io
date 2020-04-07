@@ -14,12 +14,21 @@ export const Card = styled.div`
     height: 100%;
   }
 
+  .see-more {
+    bottom: 0;
+    color: ${props => props.theme.dark.hex()};
+    position: absolute;
+    right: 2rem;
+    text-transform: uppercase;
+    z-index: 9999;
+  }
+
   &:after {
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
     background-color: ${props => props.theme.secondary.hex()};
     bottom: 0;
     content: '';
-    height: 10%;
+    height: 25%;
     position: absolute;
     transition: height 300ms ease, clip-path 300ms ease;
     width: 100%;
@@ -28,6 +37,10 @@ export const Card = styled.div`
 
   &:hover {
     box-shadow: 20px 20px 0px 0px ${props => props.theme.primary.alpha(1)};
+  }
+
+  &:hover .see-more {
+    opacity: 0;
   }
 
   &:hover::after {

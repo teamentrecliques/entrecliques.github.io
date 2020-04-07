@@ -27,6 +27,7 @@ const Card = props => {
 
   return (
     <S.Card>
+      <p className="see-more">Ver mais [+]</p>
       <BackgroundImage tag="div" className="image" fluid={match.node.childImageSharp.fluid} />
     </S.Card>
   );
