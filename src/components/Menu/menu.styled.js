@@ -12,7 +12,7 @@ export const Menu = styled.div`
   padding: 0.8rem 1rem;
   position: fixed;
   top: 0;
-  transition: min-height 0.3s ease-out;
+  transition: all 0.3s ease-out;
   z-index: 9999;
 
   .logo {
@@ -23,7 +23,7 @@ export const Menu = styled.div`
     min-height: 100vh;
 
     ul {
-      transition: opacity 300ms ease-out;
+      transition: all 300ms ease-out;
       opacity: 1;
       height: auto;
     }

@@ -16,3 +16,8 @@ export const TitleText = styled.h3`
   font-weight: 700;
   text-transform: uppercase;
 `;
+
+export const Logo = styled.img`
+  height: auto;
+  width: 50%;
+`;

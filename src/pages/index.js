@@ -17,6 +17,7 @@ import BgYellowGray from '../components/Section/Backgrounds/BgYellowGray/bgyello
 import IllustrationContent from '../components/AnimatedSlider/IllustrationContent/illustrationcontent';
 import TextContent from '../components/Section/TextContent/textcontent';
 import { DefaultTheme } from '../styles';
+import Card from '../components/AnimatedSlider/Card/card';
 
 const IndexPage = () => {
   return (
@@ -40,6 +41,7 @@ const IndexPage = () => {
               title={slide.title}
               bodycolor={DefaultTheme.dark.hex()}
               titlecolor={DefaultTheme.dark.hex()}
+              logo=""
             >
               {slide.description}
             </TextContent>
@@ -52,13 +54,16 @@ const IndexPage = () => {
       <Section title="produtos">
         <AnimatedSlider color={DefaultTheme.secondary.hex()}>
           {Data.products.map((slide, index) => <div key={index}>
+            <TextContent
+              title={slide.title}
+              bodycolor={DefaultTheme.primary.hex()}
+              titlecolor={DefaultTheme.secondary.hex()}
+              logo={slide.logo}
+            >
+              {slide.description}
+            </TextContent>
             <div>
-              <h2>{slide.title}</h2>
-              <div>{slide.description}</div>
-            </div>
-            <div>
-              <h2>{slide.title}</h2>
-              <div>{slide.description}</div>
+              <Card/>
             </div>
           </div>)}
         </AnimatedSlider>
