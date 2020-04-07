@@ -35,7 +35,7 @@ const IndexPage = () => {
       </MainSection>
 
       <Section title="o que fazemos">
-        <AnimatedSlider color="#fff">
+        <AnimatedSlider color={DefaultTheme.secondary.hex()} data={Data.whatWeDo}>
           {Data.whatWeDo.map((slide, index) => <div key={index}>
             <TextContent
               title={slide.title}
@@ -52,7 +52,7 @@ const IndexPage = () => {
       </Section>
 
       <Section title="produtos">
-        <AnimatedSlider color={DefaultTheme.secondary.hex()}>
+        <AnimatedSlider color={DefaultTheme.secondary.hex()} data={Data.products}>
           {Data.products.map((slide, index) => <div key={index}>
             <TextContent
               title={slide.title}
@@ -71,7 +71,7 @@ const IndexPage = () => {
       </Section>
 
       <Section title="clientes">
-        <AnimatedSlider color={DefaultTheme.dark.hex()}>
+        <AnimatedSlider color={DefaultTheme.dark.hex()} data={Data.clients}>
           {Data.clients.map((slide, index) => <div key={index}>
             <div>
               <h2>{slide.title}</h2>

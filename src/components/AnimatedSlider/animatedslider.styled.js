@@ -1,6 +1,12 @@
 import Slider from 'react-animated-slider';
 import styled from 'styled-components';
 
+export const SliderContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+`;
+
 export const CustomSlider = styled(Slider)`
   position: relative;
   width: 100%;
@@ -102,4 +108,32 @@ export const CustomSlider = styled(Slider)`
 .slide.animateOut.next {
   left: -100%;
 }
+`;
+
+export const NavigationDotsContainer = styled.div`
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  justify-content: flex-start;
+  left: 20rem;
+  padding: 0 1rem;
+  position: absolute;
+  top: 85.5%;
+  width: auto;
+  z-index: 999;
+`;
+
+export const NavDots = styled.div`
+  background-color: #fff;
+  border-radius: 50%;
+  height: 1rem;
+  margin: 0 0.5rem;
+  transition: all 300ms ease;
+  width: 1rem;
+
+  &.active {
+    background-color: #ffb320;
+    border-radius: 0.5rem;
+    width: 2rem;
+  }
 `;
