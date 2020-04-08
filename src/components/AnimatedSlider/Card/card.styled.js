@@ -98,7 +98,7 @@ export const Card = styled.div`
   margin: 0 auto;
   position: relative;
   transition: box-shadow 300ms ease;
-  width: 15rem;
+  max-width: 25rem;
 
   .image {
     z-index: 99;

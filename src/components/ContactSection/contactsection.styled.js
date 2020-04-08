@@ -1,15 +1,19 @@
 import styled from 'styled-components';
 
 export const Image = styled.img`
-  margin: 0;
-  margin-top: 2rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   height: auto;
-  width: 20rem;
+  margin: 0;
+  width: 100%;
+  padding: 2rem;
 `;
 
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: flex-start;
+  min-height: 2rem;
   width: 100%;
 `;
 
@@ -62,7 +66,9 @@ export const ContactContent = styled.div`
 
 export const Dropdown = styled.div`
   position: relative;
+  margin: 0 auto;
   width: 20rem;
+  z-index: 99;
 
   .dropbtn {
     border: 0;
@@ -135,6 +141,8 @@ export const ContactSection = styled.section`
   width: 100%;
 
   .flex-div {
+    height: 100%;
     width: 50%;
+    position: relative;
   }
 `;
