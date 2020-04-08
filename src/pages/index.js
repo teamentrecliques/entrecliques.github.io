@@ -13,13 +13,13 @@ import Section from '../components/Section/section';
 import AnimatedSlider from '../components/AnimatedSlider/animatedslider';
 import BgYellowBlack from '../components/Section/Backgrounds/BgYellowBlack/bgyellowblack';
 import BgGrayscale from '../components/Section/Backgrounds/BgGrayscale/bggrayscale';
-import BgYellowGray from '../components/Section/Backgrounds/BgYellowGray/bgyellowgray';
 import IllustrationContent from '../components/AnimatedSlider/IllustrationContent/illustrationcontent';
 import TextContent from '../components/Section/TextContent/textcontent';
 import { DefaultTheme } from '../styles';
 import Card from '../components/AnimatedSlider/Card/card';
 
 import mainImage from '../images/main-img.svg';
+import ContactSection from '../components/ContactSection/contactsection';
 
 const IndexPage = () => {
   return (
@@ -73,6 +73,8 @@ const IndexPage = () => {
         </AnimatedSlider>
         <BgGrayscale />
       </Section>
+
+      <ContactSection></ContactSection>
 
     </Index>
   );

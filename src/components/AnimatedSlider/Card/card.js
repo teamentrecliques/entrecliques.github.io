@@ -25,12 +25,10 @@ const Card = props => {
     data.allFile.edges.find(({ node }) => props.image === node.relativePath),
   );
 
-  console.log(props.data);
-
   return (
     <S.Card>
       <S.CardContent>
-        {props.data.map((content, index) => <div index={index}>
+        {props.data.map((content, index) => <div key={index}>
           <div className="card-item">
             <a href={content.link} target="_blank">{content.title}</a>
             <div className="card-desc">{content.description}</div>
