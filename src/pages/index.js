@@ -39,17 +39,18 @@ const IndexPage = () => {
 
       <Section title="o que fazemos">
         <AnimatedSlider color={DefaultTheme.secondary.hex()} data={Data.whatWeDo}>
-          {Data.whatWeDo.map((slide, index) => <div key={index}>
-            <TextContent
-              title={slide.title}
-              bodycolor={DefaultTheme.dark.hex()}
-              titlecolor={DefaultTheme.dark.hex()}
-              logo=""
-            >
-              {slide.description}
-            </TextContent>
-            <IllustrationContent image={slide.image} />
-          </div>)}
+          {Data.whatWeDo.map((slide, index) =>
+            <div key={index}>
+              <TextContent
+                title={slide.title}
+                bodycolor={DefaultTheme.dark.hex()}
+                titlecolor={DefaultTheme.dark.hex()}
+                logo=""
+              >
+                {slide.description}
+              </TextContent>
+              <IllustrationContent image={slide.image} />
+            </div>)}
         </AnimatedSlider>
         <BgYellowBlack/>
       </Section>
@@ -57,37 +58,22 @@ const IndexPage = () => {
       <Section title="produtos">
         <AnimatedSlider color={DefaultTheme.secondary.hex()} data={Data.products}>
           {Data.products.map((slide, index) => <div key={index}>
-            <TextContent
-              title={slide.title}
-              bodycolor={DefaultTheme.primary.hex()}
-              titlecolor={DefaultTheme.secondary.hex()}
-              logo={slide.logo}
-            >
-              {slide.description}
-            </TextContent>
+              <TextContent
+                title={slide.title}
+                bodycolor={DefaultTheme.primary.hex()}
+                titlecolor={DefaultTheme.secondary.hex()}
+                logo={slide.logo}
+              >
+                {slide.description}
+              </TextContent>
             <div>
-              <Card image={slide.image}/>
+              <Card image={slide.image} data={slide.card} />
             </div>
           </div>)}
         </AnimatedSlider>
         <BgGrayscale />
       </Section>
 
-      <Section title="clientes">
-        <AnimatedSlider color={DefaultTheme.dark.hex()} data={Data.clients}>
-          {Data.clients.map((slide, index) => <div key={index}>
-            <div>
-              <h2>{slide.title}</h2>
-              <div>{slide.description}</div>
-            </div>
-            <div>
-              <h2>{slide.title}</h2>
-              <div>{slide.description}</div>
-            </div>
-          </div>)}
-        </AnimatedSlider>
-        <BgYellowGray />
-      </Section>
     </Index>
   );
 };

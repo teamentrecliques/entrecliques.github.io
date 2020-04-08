@@ -10,6 +10,7 @@ const AnimatedSlider = props => {
       <S.CustomSlider
         theme={{ main: chroma(props.color) }}
         onSlideChange={event => setActiveSlider(event.slideIndex)}
+        duration="800"
       >
         {props.children}
       </S.CustomSlider>

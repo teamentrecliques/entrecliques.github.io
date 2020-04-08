@@ -91,8 +91,8 @@ export const CustomSlider = styled(Slider)`
 
 .slide.animateIn,
   .slide.animateOut {
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: all 800ms ease;
+  transition: all 800ms ease;
 }
 
 .slide.animateIn.previous,

@@ -29,7 +29,6 @@ const Menu = () => {
       <List>
         <ListItem sectionUrl="#">nós te ajudamos</ListItem>
         <ListItem sectionUrl="#">produtos</ListItem>
-        <ListItem sectionUrl="#">clientes</ListItem>
         <ListItem sectionUrl="#">o que fazemos</ListItem>
         <ListItem sectionUrl="#">home</ListItem>
       </List>

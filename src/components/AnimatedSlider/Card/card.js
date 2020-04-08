@@ -25,10 +25,24 @@ const Card = props => {
     data.allFile.edges.find(({ node }) => props.image === node.relativePath),
   );
 
+  console.log(props.data);
+
   return (
     <S.Card>
-      <p className="see-more">Ver mais [+]</p>
-      <BackgroundImage tag="div" className="image" fluid={match.node.childImageSharp.fluid} />
+      <S.CardContent>
+        {props.data.map((content, index) => <div index={index}>
+          <div className="card-item">
+            <a href={content.link} target="_blank">{content.title}</a>
+            <div className="card-desc">{content.description}</div>
+          </div>
+        </div>)}
+      </S.CardContent>
+      <S.SeeMore className="see-more">Ver mais [+]</S.SeeMore>
+      <BackgroundImage
+        tag="div"
+        className="image"
+        fluid={match.node.childImageSharp.fluid}
+      />
     </S.Card>
   );
 };
