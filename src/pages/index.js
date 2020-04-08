@@ -19,6 +19,8 @@ import TextContent from '../components/Section/TextContent/textcontent';
 import { DefaultTheme } from '../styles';
 import Card from '../components/AnimatedSlider/Card/card';
 
+import mainImage from '../images/main-img.svg';
+
 const IndexPage = () => {
   return (
     <Index>
@@ -31,6 +33,7 @@ const IndexPage = () => {
           <MainSectionText />
           <Button>Call to action</Button>
         </div>
+        <img src={mainImage} alt=""/>
         <BgCurve />
       </MainSection>
 
