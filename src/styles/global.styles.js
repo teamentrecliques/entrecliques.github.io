@@ -575,11 +575,33 @@ const GlobalStyle = createGlobalStyle`
   pre tt:after {
     content: "";
   }
+
   @media only screen and (max-width: 480px) {
     html {
       font-size: 100%;
     }
   }
+
+  @media only screen and (min-width: 600px) {
+    html {
+      min-width: 1024px;
+    }
+  }
+
+  @media screen and (max-width: 1399px) and (min-width: 600px) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    html {
+      font-size: 24px;
+    }
+  }
+
+
+
 `;
 
 export default GlobalStyle;
