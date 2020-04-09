@@ -66,12 +66,24 @@ export const CustomSlider = styled(Slider)`
   position: absolute;
   overflow: hidden;
   width: 100%;
+
+  .div {
+    width: 50%;
+    padding: 1rem;
+  }
 }
 
-.slide>div {
-  width: 50%;
-  padding: 1rem;
-}
+  @media screen and (max-width: 1079px) {
+    .slide {
+      flex-direction: column;
+      padding: 10rem 2rem 6rem 2rem;
+
+      .div {
+        width: 50%;
+        padding: 1rem;
+      }
+    }
+  }
 
 .slide.hidden {
   visibility: hidden;
@@ -121,6 +133,12 @@ export const NavigationDotsContainer = styled.div`
   top: 85.5%;
   width: auto;
   z-index: 999;
+
+  @media screen and (max-width: 1079px) {
+    left: 0;
+    bottom: 0;
+    position: relative;
+  }
 `;
 
 export const NavDots = styled.div`

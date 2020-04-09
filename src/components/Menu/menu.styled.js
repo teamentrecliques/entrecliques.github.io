@@ -32,4 +32,9 @@ export const Menu = styled.div`
       transform: rotate(-90deg);
     }
   }
+
+  @media screen and (max-width: 1079px) {
+    display: none;
+  }
+
 `;

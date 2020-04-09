@@ -7,18 +7,23 @@ export const Container = styled.div`
   > p {
     margin-bottom: 0.2em;
   }
+
 `;
 
 export const TopText = styled.p`
   color: ${props => props.theme.secondary};
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 300;
 `;
 
 export const StrongText = styled.p`
   color: ${props => props.theme.primary};
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 700;
+
+  @media screen and (max-width: 1079px) {
+    font-size: 3.5rem;
+  }
 
   &.secondary {
     color: ${props => props.theme.secondary};
@@ -27,6 +32,10 @@ export const StrongText = styled.p`
 
 export const RegularText = styled.p`
   color: ${props => props.theme.secondary};
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 400;
+
+  @media screen and (max-width: 1079px) {
+    font-size: 3.5rem;
+  }
 `;

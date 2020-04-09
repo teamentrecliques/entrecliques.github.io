@@ -584,7 +584,7 @@ const GlobalStyle = createGlobalStyle`
 
   @media only screen and (min-width: 600px) {
     html {
-      min-width: 1024px;
+      min-width: 1080px;
     }
   }
 

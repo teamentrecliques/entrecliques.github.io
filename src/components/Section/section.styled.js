@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.div`
   background-color: ${props => props.theme.extra.hex()};
   height: 100vh;
-  min-height: 600px;
+  min-height: 40rem;
   position: relative;
   width: 100%;
 `;
@@ -18,4 +18,8 @@ export const Title = styled.h3`
   text-transform: uppercase;
   top: 4rem;
   z-index: 999;
+
+  @media screen and (max-width: 1079px) {
+    padding-left: 4rem;
+  }
 `;

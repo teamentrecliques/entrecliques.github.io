@@ -10,4 +10,16 @@ export const MainSection = styled(BackgroundImage)`
   overflow-x: hidden;
   padding: 4rem 8rem;
   width: 100%;
+
+  @media screen and (max-width: 1079px) {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 0;
+    padding: 6rem 3rem;
+
+    img {
+      display: none;
+    }
+  }
 `;

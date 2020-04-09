@@ -5,11 +5,12 @@ import * as S from './header.styled';
 
 const Header = () => {
   const data = useStaticQuery(graphql`
-    query EtcLogo {
+    query {
       file(relativePath: { eq: "etc-logo.png" }) {
         childImageSharp {
-          fixed(width: 348, height: 58) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 348, quality: 100) {
+            ...GatsbyImageSharpFluid
+            presentationWidth
           }
         }
       }
@@ -18,7 +19,7 @@ const Header = () => {
 
   return (
     <S.Header>
-      <Img className="logo" fixed={data.file.childImageSharp.fixed} alt="" />
+      <Img className="logo" fluid={data.file.childImageSharp.fluid} alt="" />
     </S.Header>
   );
 };

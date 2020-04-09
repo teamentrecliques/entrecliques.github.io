@@ -7,6 +7,11 @@ export const Footer = styled.footer`
   min-height: 15rem;
   padding: 2rem 4rem;
   width: 100%;
+
+  @media screen and (max-width: 1079px) {
+    padding: 0;
+    flex-direction: column;
+  }
 `;
 
 export const Img = styled.img`

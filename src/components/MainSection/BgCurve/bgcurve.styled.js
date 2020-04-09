@@ -14,4 +14,8 @@ export const BgCurve = styled.div`
   top: 0;
   width: 100vw;
   z-index: -1;
+
+  @media screen and (max-width: 1079px) {
+    display: none;
+  }
 `;
