@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 
 export const FormContainer = styled.div`
-  border: 1px solid ${props => props.theme.primary};
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  width: 25rem;
 
   h3 {
     color: ${props => props.theme.primary};
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 120%;
   }
 
@@ -17,7 +18,7 @@ export const FormContainer = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
 

@@ -1,15 +1,5 @@
 import styled from 'styled-components';
 
-export const Image = styled.img`
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: auto;
-  margin: 0;
-  width: 100%;
-  padding: 2rem;
-`;
-
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -54,54 +44,53 @@ export const Link = styled.div`
 export const HelpText = styled.p`
   color: ${props => props.theme.secondary};
   font-size: 1rem;
-  line-height: 120%;
+  line-height: 140%;
 `;
 
-export const ContactContent = styled.div`
+export const QuestionContent = styled.div`
+  background-color: ${props => props.theme.dark.alpha(0.8)};
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 2rem;
+  margin: 2rem;
+  width: 60%;
+  z-index: 9;
 `;
 
 export const Dropdown = styled.div`
   position: relative;
-  margin: 0 auto;
-  width: 20rem;
+  margin-top: 2rem;
+  width: 50%;
   z-index: 99;
 
   .dropbtn {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
     border: 0;
     background-color: ${props => props.theme.primary.hex()};
     color: ${props => props.theme.dark.hex()};
     cursor: pointer;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 15px 30px;
     position: relative;
     width: 100%;
-  }
 
-  &::before {
-    content: '';
-    border: 3px solid ${props => props.theme.primary.hex()};
-    height: calc(100% + 14px);
-    left: -7px;
-    position: absolute;
-    top: -7px;
-    width: calc(100% + 14px);
+    > img {
+      margin: 0;
+    }
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: ${props => props.theme.dark.alpha(0.8)};
-    border: 3px solid ${props => props.theme.primary.hex()};
     border-top: 0;
     min-width: 160px;
     padding-top: 1rem;
-    width: 103%;
-    left: -1.5%;
+    width: 100%;
     z-index: 1;
   }
 
@@ -131,19 +120,49 @@ export const Dropdown = styled.div`
   }
 `;
 
+export const FormArea = styled.div`
+  align-items: center;
+  background-color: ${props => props.theme.gray.hex()};
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  position: relative;
+  padding: 4rem 6rem;
+  width: 100%;
+`
+
+export const QuestionArea = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 400px;
+  position: relative;
+  padding: 4rem 6rem;
+  width: 100%;
+  z-index: 99;
+`;
+
+export const Image = styled.img`
+  height: auto;
+  top: -2rem;
+  right: -2rem;
+  margin: 0;
+  position: absolute;
+  top: 1rem;
+  width: 50%;
+  z-index: 9;
+`;
+
 export const ContactSection = styled.section`
   align-items: flex-start;
   background-color: ${props => props.theme.dark.hex()};
   display: flex;
-  height: 100vh;
-  max-height: 40rem;
+  flex-direction: column;
+  min-height: 100vh;
   justify-content: space-between;
-  padding: 4rem 6rem;
+  position: relative;
+  overflow: hidden;
   width: 100%;
-
-  .flex-div {
-    height: 100%;
-    width: 50%;
-    position: relative;
-  }
 `;

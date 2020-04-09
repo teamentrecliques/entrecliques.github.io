@@ -1,17 +1,21 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import * as S from './contactsection.styled';
 import contactOptions from '../../data/contact';
 import contactImage from '../../images/contact.svg';
 import Form from './Form/form';
+import ArrowDown from '../../images/arrowdown.svg';
+import { FormArea } from './contactsection.styled';
+
 
 const ContactSection = () => {
-  const [content, setContent] = useState([{ helptext: 'Escolha uma opção ao lado ou use o formulário para entrar em contato!', links: [] }]);
+  const [content, setContent] = useState([{ helptext: 'Escolha uma opção acima ou use o formulário abaixo para entrar em contato!', links: [] }]);
 
   return (
     <S.ContactSection>
-      <div className="flex-div">
+      <S.QuestionArea>
+
         <S.Dropdown>
-          <button className="dropbtn">DO QUE VOCÊ PRECISA?</button>
+          <button className="dropbtn">DO QUE VOCÊ PRECISA? <img src={ArrowDown} alt="" /></button>
           <div className="dropdown-content">
             {contactOptions.map((option, index) =>
               <button
@@ -26,11 +30,8 @@ const ContactSection = () => {
             )}
           </div>
         </S.Dropdown>
-        <S.Image src={contactImage} alt="" />
-      </div>
-      <div className="flex-div">
         {content.map(text => (
-          <S.ContactContent>
+          <S.QuestionContent>
             <S.HelpText className="help-text">{text.helptext}</S.HelpText>
             <S.LinkContainer>
               {text.links.map(link => (
@@ -41,10 +42,16 @@ const ContactSection = () => {
                 </S.Link>
               ))}
             </S.LinkContainer>
-          </S.ContactContent>
+          </S.QuestionContent>
         ))}
+      </S.QuestionArea>
+      <FormArea>
+
+
         <Form/>
-      </div>
+
+      </FormArea>
+      <S.Image src={contactImage} alt="" />
     </S.ContactSection>
   );
 };

@@ -11,7 +11,7 @@ const Card = props => {
           node {
             relativePath
             childImageSharp {
-              fluid(maxWidth: 300) {
+              fluid(maxWidth: 400, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
