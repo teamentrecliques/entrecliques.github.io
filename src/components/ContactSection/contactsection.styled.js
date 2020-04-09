@@ -136,6 +136,7 @@ export const ContactSection = styled.section`
   background-color: ${props => props.theme.dark.hex()};
   display: flex;
   height: 100vh;
+  max-height: 40rem;
   justify-content: space-between;
   padding: 4rem 6rem;
   width: 100%;

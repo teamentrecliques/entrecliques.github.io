@@ -20,6 +20,7 @@ import Card from '../components/AnimatedSlider/Card/card';
 
 import mainImage from '../images/main-img.svg';
 import ContactSection from '../components/ContactSection/contactsection';
+import Footer from '../components/Footer/footer';
 
 const IndexPage = () => {
   return (
@@ -73,9 +74,8 @@ const IndexPage = () => {
         </AnimatedSlider>
         <BgGrayscale />
       </Section>
-
       <ContactSection></ContactSection>
-
+      <Footer/>
     </Index>
   );
 };
