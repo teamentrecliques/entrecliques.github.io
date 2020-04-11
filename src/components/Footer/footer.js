@@ -40,7 +40,9 @@ const Footer = () => (
       </S.SocialContainer>
     </div>
     <div>
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=19iE1VWBzkIxPxjQbMOwM-Tb86_K985KZ" width="400" height="240"></iframe>
+      <S.MapContainer>
+        <S.MapIframe src="https://www.google.com/maps/d/u/0/embed?mid=19iE1VWBzkIxPxjQbMOwM-Tb86_K985KZ"></S.MapIframe>
+      </S.MapContainer>
     </div>
   </S.Footer>
 );

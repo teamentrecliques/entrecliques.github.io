@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import Breakpoints from './global.breakpoints';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -588,15 +589,21 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
-  @media screen and (max-width: 1399px) and (min-width: 600px) {
+  @media screen and ${Breakpoints.mobile} {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and ${Breakpoints.desktop} {
     html {
       font-size: 18px;
     }
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and ${Breakpoints.desktopLg} {
     html {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
 

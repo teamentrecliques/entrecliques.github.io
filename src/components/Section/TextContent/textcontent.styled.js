@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   font-size: 1rem;
   line-height: 120%;
+  width: 60%;
+  margin-right: 2rem;
 `;
 
 export const BodyText = styled.p`

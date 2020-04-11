@@ -15,8 +15,8 @@ const ContactSection = () => {
       <S.QuestionArea>
 
         <S.Dropdown>
-          <button className="dropbtn">DO QUE VOCÊ PRECISA? <img src={ArrowDown} alt="" /></button>
-          <div className="dropdown-content">
+          <S.DropdownButton>DO QUE VOCÊ PRECISA? <img src={ArrowDown} alt="" /></S.DropdownButton>
+          <S.DropdownContent>
             {contactOptions.map((option, index) =>
               <button
                 onClick={() => setContent([
@@ -28,7 +28,7 @@ const ContactSection = () => {
               {option.topic}
             </button>
             )}
-          </div>
+          </S.DropdownContent>
         </S.Dropdown>
         {content.map(text => (
           <S.QuestionContent>

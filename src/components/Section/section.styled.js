@@ -1,11 +1,15 @@
 import styled from 'styled-components';
+import { Breakpoints } from '../../styles';
 
 export const Section = styled.div`
   background-color: ${props => props.theme.extra.hex()};
   height: 100vh;
-  min-height: 40rem;
   position: relative;
   width: 100%;
+
+  @media screen and ${Breakpoints.mobileSm} {
+    min-height: auto;
+  }
 `;
 
 export const Title = styled.h3`
@@ -19,7 +23,7 @@ export const Title = styled.h3`
   top: 4rem;
   z-index: 999;
 
-  @media screen and (max-width: 1079px) {
-    padding-left: 4rem;
+  @media screen and ${Breakpoints.mobileSm} {
+    padding-left: 3rem;
   }
 `;

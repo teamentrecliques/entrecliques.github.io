@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Breakpoints } from '../../styles';
 
 export const Menu = styled.div`
   align-items: center;
@@ -33,8 +34,7 @@ export const Menu = styled.div`
     }
   }
 
-  @media screen and (max-width: 1079px) {
+  @media screen and ${Breakpoints.mobileSm} {
     display: none;
   }
-
 `;

@@ -1,10 +1,15 @@
 import styled from 'styled-components';
+import Breakpoints from '../../styles/global.breakpoints';
 
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   min-height: 2rem;
   width: 100%;
+
+  @media screen and ${Breakpoints.mobileSm} {
+    flex-direction: column;
+  }
 `;
 
 export const Link = styled.div`
@@ -39,6 +44,10 @@ export const Link = styled.div`
     box-shadow: 6px 6px 0px 0px #ffb320;
     margin-right: 0.3rem;
   }
+
+  @media screen and ${Breakpoints.mobileSm} {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 export const HelpText = styled.p`
@@ -56,45 +65,23 @@ export const QuestionContent = styled.div`
   margin: 2rem;
   width: 60%;
   z-index: 9;
+
+  @media screen and ${Breakpoints.mobileSm} {
+    width: 90%;
+  }
 `;
 
-export const Dropdown = styled.div`
-  position: relative;
-  margin-top: 2rem;
-  width: 50%;
-  z-index: 99;
+export const DropdownContent = styled.div`
+  display: none;
+  position: absolute;
+  background-color: ${props => props.theme.dark.alpha(0.8)};
+  border-top: 0;
+  min-width: 160px;
+  padding-top: 1rem;
+  width: 100%;
+  z-index: 1;
 
-  .dropbtn {
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    border: 0;
-    background-color: ${props => props.theme.primary.hex()};
-    color: ${props => props.theme.dark.hex()};
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding: 15px 30px;
-    position: relative;
-    width: 100%;
-
-    > img {
-      margin: 0;
-    }
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: ${props => props.theme.dark.alpha(0.8)};
-    border-top: 0;
-    min-width: 160px;
-    padding-top: 1rem;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .dropdown-content button {
+  button {
     border: 0;
     background-color: transparent;
     color: ${props => props.theme.secondary.hex()};
@@ -106,17 +93,47 @@ export const Dropdown = styled.div`
     width: 100%;
   }
 
-  .dropdown-content button:hover {
+  button:hover {
     background-color: ${props => props.theme.primary.alpha(0.8)};
   }
+`;
 
-  &:hover .dropdown-content {
+export const DropdownButton = styled.button`
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  border: 0;
+  background-color: ${props => props.theme.primary.hex()};
+  color: ${props => props.theme.dark.hex()};
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  position: relative;
+  width: 100%;
+
+  > img {
+    margin: 0;
+  }
+`;
+
+export const Dropdown = styled.div`
+  position: relative;
+  margin-top: 2rem;
+  width: 50%;
+  z-index: 99;
+
+  &:hover ${DropdownContent} {
     display: block;
   }
 
-  &:hover .dropbtn {
+  &:hover ${DropdownButton} {
     color: ${props => props.theme.secondary.hex()};
     background-color: ${props => props.theme.dark.hex()};
+  }
+
+  @media screen and ${Breakpoints.mobileSm} {
+    width: 90%;
   }
 `;
 
@@ -125,12 +142,16 @@ export const FormArea = styled.div`
   background-color: ${props => props.theme.gray.hex()};
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 400px;
   position: relative;
   padding: 4rem 6rem;
   width: 100%;
-`
+
+  @media screen and ${Breakpoints.mobileSm} {
+    padding: 1rem;
+  }
+`;
 
 export const QuestionArea = styled.div`
   align-items: center;
@@ -142,6 +163,10 @@ export const QuestionArea = styled.div`
   padding: 4rem 6rem;
   width: 100%;
   z-index: 99;
+
+  @media screen and ${Breakpoints.mobileSm} {
+    padding: 1rem;
+  }
 `;
 
 export const Image = styled.img`
@@ -153,6 +178,10 @@ export const Image = styled.img`
   top: 1rem;
   width: 50%;
   z-index: 9;
+
+  @media screen and ${Breakpoints.mobileSm} {
+    width: 100%;
+  }
 `;
 
 export const ContactSection = styled.section`

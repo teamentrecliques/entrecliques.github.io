@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Breakpoints from '../../styles/global.breakpoints';
 
 export const Footer = styled.footer`
   display: flex;
@@ -8,16 +9,30 @@ export const Footer = styled.footer`
   padding: 2rem 4rem;
   width: 100%;
 
-  @media screen and (max-width: 1079px) {
-    padding: 0;
+  @media screen and ${Breakpoints.mobileSm} {
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 2rem 1rem;
+
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 `;
 
 export const Img = styled.img`
   height: auto;
   margin: 0;
-  width: 10em;
+  width: 10rem;
+
+  @media screen and ${Breakpoints.mobileSm} {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const AddressContainer = styled.div`
@@ -29,6 +44,16 @@ export const AddressContainer = styled.div`
   > p {
     padding: 1rem;
     padding-left: 0;
+  }
+
+  @media screen and ${Breakpoints.mobileSm} {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    p {
+      padding: 0;
+      margin-bottom: 1rem;
+    }
   }
 `;
 
@@ -55,4 +80,37 @@ export const SocialContainer = styled.div`
   > p {
     margin: 0;
   }
+
+  @media screen and ${Breakpoints.mobileSm} {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+
+    > a {
+      padding: 0;
+      grid-column: span 1;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+
+    > p {
+      margin: 0 auto;
+      grid-column: span 4;
+    }
+  }
+`;
+
+export const MapContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+`;
+
+export const MapIframe = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 `;

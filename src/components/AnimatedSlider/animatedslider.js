@@ -11,6 +11,7 @@ const AnimatedSlider = props => {
         theme={{ main: chroma(props.color) }}
         onSlideChange={event => setActiveSlider(event.slideIndex)}
         duration="800"
+        touchDisabled="true"
       >
         {props.children}
       </S.CustomSlider>

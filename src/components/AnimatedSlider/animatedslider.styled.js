@@ -1,5 +1,6 @@
 import Slider from 'react-animated-slider';
 import styled from 'styled-components';
+import Breakpoints from '../../styles/global.breakpoints';
 
 export const SliderContainer = styled.div`
   position: relative;
@@ -42,84 +43,91 @@ export const CustomSlider = styled(Slider)`
     padding: 0.5rem 4.5rem 0.5rem 0.5rem;
   }
 
-  a.previousButton.disabled {
-    opacity: 0.5;
-  }
-
   a.nextButton {
     padding: 0.5rem 0.5rem 0.5rem 4.5rem;
     left: 12.5rem;
   }
 
+  a.previousButton.disabled,
   a.nextButton.disabled {
     opacity: 0.5;
   }
 
-  a>svg>polygon{
+  a > svg > polygon {
     fill: ${props => props.theme.main.hex()};
   }
 
-.slide {
-  display: flex;
-  height: 100%;
-  padding: 10rem 4rem 4rem 6rem;
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
+  .slide {
+    display: flex;
+    height: 100%;
+    padding: 10rem 4rem 4rem 6rem;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
 
-  .div {
-    width: 50%;
-    padding: 1rem;
-  }
-}
-
-  @media screen and (max-width: 1079px) {
-    .slide {
-      flex-direction: column;
-      padding: 10rem 2rem 6rem 2rem;
-
-      .div {
-        width: 50%;
-        padding: 1rem;
-      }
+    > div {
+      width: 50%;
+      padding: 1rem;
     }
   }
 
-.slide.hidden {
-  visibility: hidden;
-}
+  .slide.hidden {
+    visibility: hidden;
+  }
 
-.slide.previous {
-  left: -100%;
-}
+  .slide.previous {
+    left: -100%;
+  }
 
-.slide.current {
-  left: 0;
-}
+  .slide.current {
+    left: 0;
+  }
 
-.slide.next {
-  left: 100%;
-}
+  .slide.next {
+    left: 100%;
+  }
 
-.slide.animateIn,
+  .slide.animateIn,
   .slide.animateOut {
-  -webkit-transition: all 800ms ease;
-  transition: all 800ms ease;
-}
+    -webkit-transition: all 800ms ease;
+    transition: all 800ms ease;
+  }
 
-.slide.animateIn.previous,
+  .slide.animateIn.previous,
   .slide.animateIn.next {
-  left: 0;
-  visibility: visible;
-}
+    left: 0;
+    visibility: visible;
+  }
 
-.slide.animateOut.previous {
-  left: 100%;
-}
+  .slide.animateOut.previous {
+    left: 100%;
+  }
 
-.slide.animateOut.next {
-  left: -100%;
-}
+  .slide.animateOut.next {
+    left: -100%;
+  }
+
+  @media screen and ${Breakpoints.mobileSm} {
+    a.previousButton {
+      left: 20%;
+      padding: 0.5rem 4.5rem 0.5rem 0.5rem;
+    }
+
+    a.nextButton {
+      padding: 0.5rem 0.5rem 0.5rem 4.5rem;
+      left: 52%;
+    }
+
+    .slide {
+      padding: 9rem 2rem 4rem 2rem;
+      flex-direction: column;
+
+      > div {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
 `;
 
 export const NavigationDotsContainer = styled.div`
@@ -134,10 +142,8 @@ export const NavigationDotsContainer = styled.div`
   width: auto;
   z-index: 999;
 
-  @media screen and (max-width: 1079px) {
-    left: 0;
-    bottom: 0;
-    position: relative;
+  @media screen and ${Breakpoints.mobileSm} {
+    display: none;
   }
 `;
 
