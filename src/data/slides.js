@@ -15,7 +15,7 @@ export const whatWeDo = [
   {
     title: 'Posicionamento de Mercado',
     description:
-      'Com destaque para o marketing de pesquisa, planejamento estratégico e marketing de conteúdo, estamos há 12 no mercado de marketing digital e desde 1999 trabalhando com Internet. Posicionamos estrategicamente empresas nos principais canais digitais baseados nos valores e diferenciais do seu produto e da sua marca.',
+      'Com destaque para o marketing de pesquisa, planejamento estratégico e marketing de conteúdo, estamos há 12 anos no mercado de marketing digital e desde 1999 trabalhando com Internet. Posicionamos estrategicamente empresas nos principais canais digitais baseados nos valores e diferenciais do seu produto e da sua marca.',
     image: searchSvg,
   },
   {
