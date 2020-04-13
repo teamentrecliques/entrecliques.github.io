@@ -6,8 +6,16 @@ export const Footer = styled.footer`
   height: auto;
   justify-content: space-around;
   min-height: 15rem;
-  padding: 2rem 4rem;
+  padding: 4rem;
   width: 100%;
+
+  > div {
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
 
   @media screen and ${Breakpoints.mobileSm} {
     align-items: center;
@@ -21,6 +29,7 @@ export const Footer = styled.footer`
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 90%;
     }
   }
 `;
@@ -28,6 +37,7 @@ export const Footer = styled.footer`
 export const Img = styled.img`
   height: auto;
   margin: 0;
+  margin-top: 1rem;
   width: 10rem;
 
   @media screen and ${Breakpoints.mobileSm} {
@@ -104,6 +114,7 @@ export const MapContainer = styled.div`
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
+  width: 100%;
 `;
 
 export const MapIframe = styled.iframe`
@@ -111,6 +122,10 @@ export const MapIframe = styled.iframe`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   border: 0;
+
+  @media screen and ${Breakpoints.mobileSm} {
+    height: 100%;
+  }
 `;
