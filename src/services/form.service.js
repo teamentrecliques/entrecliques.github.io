@@ -1,8 +1,8 @@
-import $http from "./http.service";
+import $http from './http.service';
 
 const submit = payload =>
   $http
-    .post("/subscription", payload)
+    .post("/newmail", payload)
     .then(response => {
       console.log(response);
       const { status } = response;

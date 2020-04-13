@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { api as config } from '../config'
+import { api as config } from '../apiconfig';
 
 const $http = axios.create(config);
 
