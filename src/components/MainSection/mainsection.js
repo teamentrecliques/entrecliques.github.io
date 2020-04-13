@@ -17,6 +17,7 @@ const MainSection = props => {
 
   return (
     <S.MainSection
+      id={props.id}
       Tag="section"
       fluid={data.desktop.childImageSharp.fluid}
       backgroundColor="#181818"

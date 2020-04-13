@@ -1,6 +1,5 @@
 function scrollTo() {
   const anchorsEl = document.querySelectorAll('[data-anchor]');
-  console.log(anchorsEl);
 
   const anchors = Array.from(anchorsEl);
   anchors.every(el => {

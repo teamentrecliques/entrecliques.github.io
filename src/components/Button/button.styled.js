@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const Button = styled.button.attrs(props => ({
-  "data-anchor": props.anchor,
-}))`
+export const Button = styled.button`
   border: 0;
   background-color: ${props => props.theme.highlight.hex()};
   color: ${props => props.theme.secondary.hex()};

@@ -6,9 +6,14 @@ import Form from './Form/form';
 import ArrowDown from '../../images/arrowdown.svg';
 import { FormArea } from './contactsection.styled';
 
-
 const ContactSection = () => {
-  const [content, setContent] = useState([{ helptext: 'Escolha uma opção acima ou use o formulário abaixo para entrar em contato!', links: [] }]);
+  const [content, setContent] = useState([
+    {
+      helptext:
+        'Escolha uma opção acima ou use o formulário abaixo para entrar em contato!',
+      links: [],
+    },
+  ]);
 
   return (
     <S.ContactSection id="contact">
@@ -37,8 +42,8 @@ const ContactSection = () => {
             <S.HelpText>{text.helptext}</S.HelpText>
             <S.LinkContainer>
               {text.links.map((link, index) => (
-                <S.Link>
-                  <a className="link" href={link.href} key={index}>
+                <S.Link key={index}>
+                  <a className="link" href={link.href}>
                     {link.name}
                   </a>
                 </S.Link>

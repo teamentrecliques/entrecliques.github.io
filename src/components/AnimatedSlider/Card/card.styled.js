@@ -84,7 +84,8 @@ export const CardContent = styled.div`
   padding: 1rem;
   position: absolute;
   width: 100%;
-  z-index: 9999;
+  z-index: -1;
+  transition: z-index 300ms ease;
 `;
 
 export const SeeMore = styled.p`
@@ -132,6 +133,10 @@ export const Card = styled.div`
     ${CardItem} {
       opacity: 1;
       pointer-events: auto;
+    }
+
+    ${CardContent} {
+      z-index: 9999;
     }
   }
 
