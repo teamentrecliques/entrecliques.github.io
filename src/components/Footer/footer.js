@@ -24,16 +24,16 @@ const Footer = () => (
         </p>
       </S.AddressContainer>
       <S.SocialContainer>
-        <a href="https://pt-br.facebook.com/entrecliques" id="social-facebook">
+        <a href="https://pt-br.facebook.com/entrecliques" target="_blank" rel="noopener noreferrer" id="social-facebook">
           <img src={Icon.facebook} alt="" />
         </a>
-        <a href="https://www.instagram.com/qentrecliques" id="social-instagram">
+        <a href="https://www.instagram.com/qentrecliques" target="_blank" rel="noopener noreferrer" id="social-instagram">
           <img src={Icon.instagram} alt="" />
         </a>
-        <a href="https://api.whatsapp.com/send?phone=5511948583630" id="social-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5511948583630" target="_blank" rel="noopener noreferrer" id="social-whatsapp">
           <img src={Icon.whatsapp} alt="" />
         </a>
-        <a href="https://www.linkedin.com/company/entrecliques/" id="social-linkedin">
+        <a href="https://www.linkedin.com/company/entrecliques/" target="_blank" rel="noopener noreferrer" id="social-linkedin">
           <img src={Icon.likedin} alt="" />
         </a>
         <p>(15) 3527-2005 | (11) 94858-3630</p>
