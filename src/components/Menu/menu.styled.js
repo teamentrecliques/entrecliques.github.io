@@ -4,6 +4,7 @@ import { Breakpoints } from '../../styles';
 export const Menu = styled.div`
   align-items: center;
   background-color: ${props => props.theme.primary.hex()};
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.24);
   display: flex;
   flex-direction: column;
   height: auto;

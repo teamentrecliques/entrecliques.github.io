@@ -5,7 +5,7 @@ import * as S from './mainsectiontitle.styled';
 
 const MainSectionTitle = () => (
   <S.Container>
-    <S.TopText>está buscando os</S.TopText>
+    <S.TopText>está buscando</S.TopText>
     <S.StrongText className="secondary">Melhores</S.StrongText>
     <S.StrongText>Resultados</S.StrongText>
     <S.RegularText>Online?</S.RegularText>

@@ -37,7 +37,7 @@ const IndexPage = () => {
         <div>
           <MainSectionTitle />
           <MainSectionText />
-          <Button anchor="contact">Call to action</Button>
+          <Button anchor="contact">Solicitar ajuda</Button>
         </div>
         <img src={mainImage} alt="" />
         <BgCurve />

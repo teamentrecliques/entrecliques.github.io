@@ -3,7 +3,7 @@ import * as S from './mainsectiontext.styled';
 
 const MainSectionText = () => {
   return (
-    <S.Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</S.Text>
+    <S.Text>Estratégias digitais com foco em performance. A presença online do seu Negócio com o melhor do Marketing Digital.</S.Text>
   );
 }
 

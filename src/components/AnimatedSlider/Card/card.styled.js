@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import Breakpoints from '../../../styles/global.breakpoints';
 
 export const CardDesc = styled.div`
-  border-radius: 5px;
   background: #ffb320;
+  box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
   color: #131313;
   opacity: 0;
   line-height: 120%;
@@ -12,22 +13,23 @@ export const CardDesc = styled.div`
   padding: 0.5rem;
   position: absolute;
   right: 100%;
-  top: -70%;
+  top: 0;
   transition: opacity 300ms ease;
-  width: 10rem;
+  width: 12rem;
+  z-index: 9999;
 
   &:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 30%;
-    width: 0;
-    height: 0;
-    border: 16px solid transparent;
+    border: 12px solid transparent;
     border-left-color: #ffb320;
     border-right: 0;
-    margin-top: -16px;
-    margin-right: -16px;
+    content: '';
+    height: 0;
+    margin-top: -12px;
+    margin-right: -12px;
+    position: absolute;
+    right: 0;
+    top: 1.3rem;
+    width: 0;
   }
 
   @media screen and ${Breakpoints.mobileSm} {

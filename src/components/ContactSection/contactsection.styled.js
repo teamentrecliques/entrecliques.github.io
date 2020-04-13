@@ -13,6 +13,9 @@ export const LinkContainer = styled.div`
 `;
 
 export const Link = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   box-shadow: 3px 3px 0px 0px #ccc;
   border: 1px solid #ccc;
