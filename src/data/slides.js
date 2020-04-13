@@ -45,16 +45,19 @@ export const products = [
         link: 'http://entrecliques.com.br/psnl/',
         description:
           'Um Guia passo a passo GRATUITO que você pode implementar AGORA MESMO! Prepare seu Negócio Local para enfrentar um momento difícil.',
+        id: 'card-psnl',
       },
       {
         title: 'Semana Digital do Varejo',
         link: 'https://www.youtube.com/playlist?list=PLgXVj7R15asAKB1IDnzs3f-gbiIT_vPz7',
         description: 'Série de conteúdos para direcionar varejistas a iniciarem um planejamento de divulgação. Utilizando os canais digitais, sugerimos ações que podem ser aplicadas para diversos segmentos do varejo.',
+        id: 'card-sdv',
       },
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
         link: 'https://pay.hotmart.com/C16987506J',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
+        id: 'card-curso-gmb-pl',
       },
     ],
   },
@@ -63,17 +66,19 @@ export const products = [
     title: 'Google Meu Negócio',
     image: 'map.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ',
+      'Empresas com fichas atualizadas no Google Meu Negócio apresentam 5x mais intenção de compra. Aprender a utilizar a plataforma para o seu negócio local é a melhor forma se aproximar do seu cliente. ',
     card: [
       {
         title: 'Gerador de Link de Avaliação',
         link: 'http://entrecliques.com.br/gerador-google-meu-negocio/',
         description: 'Quer melhorar a sua classificação no Google Meu Negócio? Incentive seus clientes a avaliarem você! Gratuitamente, gere de um link do seu estabelecimento ou um código QRCode.',
+        id: 'card-gerador-avaliacao',
       },
       {
         title: "Avaliação de Perfil Vendedor",
         link: 'http://entrecliques.com.br/perfil-google-meu-negocio/',
         description: 'Você sabe se posicionar com o Google Meu Negócio? Faça o teste e descubra como ter um perfil vendedor explorando o melhor do Google!',
+        id: 'card-perfil-vendedor',
       },
     ],
   },
@@ -88,16 +93,19 @@ export const products = [
         title: "Consultoria Personalizada",
         link: 'https://api.whatsapp.com/send?phone=5511948583630&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20consultoria%20personalizada.',
         description: 'Consultoria personalizada e pensada para te ajudar a planejar estrategicamente as ações digitais da sua empresa. Definindo objetivo e público, métodos, técnicas e ferramentas.',
+        id: 'card-consultoria',
       },
       {
         title: 'Curso "Criando artes com o Canva"',
         link: 'https://pay.hotmart.com/G22607273X',
         description: 'Identidade visual para o seu negócio! O Canva é uma ferramenta de criação online, rápida e fácil. Com ela, você pode criar por conta própria artes para as redes sociais da sua empresa. Deixe seus posts com uma cara mais profissional, aprenda o básico de design e promova visualmente o seu negócio.',
+        id: 'card-curso-canva',
       },
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
         link: 'https://pay.hotmart.com/C16987506J',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
+        id: 'card-curso-gmb-pc',
       },
     ],
   },

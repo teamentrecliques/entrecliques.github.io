@@ -5,7 +5,7 @@ export const BgGrayscale = styled.div`
   background: linear-gradient(337.55deg, #141414 0%, #2b2b2b 100%);
   top: 0;
   height: 100vh;
-  min-height: 600px;
+  min-height: 768px;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -19,6 +19,9 @@ export const BgGrayscale = styled.div`
   }
 
   @media screen and ${Breakpoints.mobileSm} {
+    height: auto;
+    min-height: 120vh;
+
     .arrows {
       animation: 10s infinite alternate fade-mobile;
       width: 100%;

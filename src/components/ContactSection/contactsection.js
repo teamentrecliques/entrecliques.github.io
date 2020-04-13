@@ -25,7 +25,7 @@ const ContactSection = () => {
           </S.DropdownButton>
           <S.DropdownContent>
             {contactOptions.map((option, index) =>
-              <button
+              <button id={option.id}
                 onClick={() => setContent([
                     { helptext: option.helptext, links: option.links },
                   ])
@@ -37,13 +37,13 @@ const ContactSection = () => {
             )}
           </S.DropdownContent>
         </S.Dropdown>
-        {content.map(text => (
-          <S.QuestionContent>
+        {content.map((text, index) => (
+          <S.QuestionContent key={index}>
             <S.HelpText>{text.helptext}</S.HelpText>
             <S.LinkContainer>
               {text.links.map((link, index) => (
                 <S.Link key={index}>
-                  <a className="link" href={link.href}>
+                  <a id={link.id} className="link" href={link.href}>
                     {link.name}
                   </a>
                 </S.Link>

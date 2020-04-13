@@ -4,11 +4,12 @@ import { Breakpoints } from '../../styles';
 export const Section = styled.div`
   background-color: ${props => props.theme.extra.hex()};
   height: 100vh;
+  min-height: 768px;
   position: relative;
   width: 100%;
 
   @media screen and ${Breakpoints.mobileSm} {
-    min-height: auto;
+    height: 110vh;
   }
 `;
 

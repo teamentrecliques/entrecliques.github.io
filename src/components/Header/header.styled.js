@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Breakpoints from '../styles/global.breakpoints';
+import Breakpoints from '../../styles/global.breakpoints';
 
 export const Header = styled.header`
   position: absolute;
