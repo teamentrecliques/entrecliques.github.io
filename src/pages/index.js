@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as Data from '../data/slides';
+import { $anchor } from '../utils';
 
 import Index from '../components/Layout';
 import SEO from '../components/seo';
@@ -23,24 +24,28 @@ import ContactSection from '../components/ContactSection/contactsection';
 import Footer from '../components/Footer/footer';
 
 const IndexPage = () => {
+  useEffect(() => {
+    $anchor.scrollTo();
+  }, []);
+
   return (
     <Index>
       <SEO title="Home" />
       <Menu />
 
-      <MainSection type="main">
+      <MainSection type="main" id="home">
         <div>
           <MainSectionTitle />
           <MainSectionText />
-          <Button>Call to action</Button>
+          <Button anchor="contact">Call to action</Button>
         </div>
-        <img src={mainImage} alt=""/>
+        <img src={mainImage} alt="" />
         <BgCurve />
       </MainSection>
 
-      <Section title="o que fazemos">
+      <Section title="o que fazemos" id="services">
         <AnimatedSlider color={DefaultTheme.secondary.hex()} data={Data.whatWeDo}>
-          {Data.whatWeDo.map((slide, index) =>
+          {Data.whatWeDo.map((slide, index) => (
             <div key={index}>
               <TextContent
                 title={slide.title}
@@ -51,14 +56,16 @@ const IndexPage = () => {
                 {slide.description}
               </TextContent>
               <IllustrationContent image={slide.image} />
-            </div>)}
+            </div>
+          ))}
         </AnimatedSlider>
-        <BgYellowBlack/>
+        <BgYellowBlack />
       </Section>
 
-      <Section title="produtos">
+      <Section title="produtos" id="products">
         <AnimatedSlider color={DefaultTheme.secondary.hex()} data={Data.products}>
-          {Data.products.map((slide, index) => <div key={index}>
+          {Data.products.map((slide, index) => (
+            <div key={index}>
               <TextContent
                 title={slide.title}
                 bodycolor={DefaultTheme.primary.hex()}
@@ -67,17 +74,18 @@ const IndexPage = () => {
               >
                 {slide.description}
               </TextContent>
-            <div>
-              <Card image={slide.image} data={slide.card} />
+              <div>
+                <Card image={slide.image} data={slide.card} />
+              </div>
             </div>
-          </div>)}
+          ))}
         </AnimatedSlider>
         <BgGrayscale />
       </Section>
-      <ContactSection></ContactSection>
-      <Footer/>
+      <ContactSection />
+      <Footer />
     </Index>
   );
-};
+}
 
 export default IndexPage;

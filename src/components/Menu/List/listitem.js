@@ -4,7 +4,7 @@ import * as S from './listitem.styled';
 
 const ListItem = props => (
   <S.Item>
-    <S.Link href={props.sectionUrl}>{props.children}</S.Link>
+    <S.Link data-anchor={props.anchor} href={props.sectionUrl}>{props.children}</S.Link>
   </S.Item>
 );
 

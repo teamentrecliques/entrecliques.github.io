@@ -27,10 +27,10 @@ const Menu = () => {
       onMouseLeave={() => setHover(false)}
     >
       <List>
-        <ListItem sectionUrl="#">nós te ajudamos</ListItem>
-        <ListItem sectionUrl="#">produtos</ListItem>
-        <ListItem sectionUrl="#">o que fazemos</ListItem>
-        <ListItem sectionUrl="#">home</ListItem>
+        <ListItem sectionUrl="#contact" anchor="contact">nós te ajudamos</ListItem>
+        <ListItem sectionUrl="#products" anchor="products">produtos</ListItem>
+        <ListItem sectionUrl="#services" anchor="services">o que fazemos</ListItem>
+        <ListItem sectionUrl="#home" anchor="home">home</ListItem>
       </List>
       <Img className="logo" fixed={data.file.childImageSharp.fixed} alt="" />
     </S.Menu>

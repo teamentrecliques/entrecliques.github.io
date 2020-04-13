@@ -11,11 +11,13 @@ const ContactSection = () => {
   const [content, setContent] = useState([{ helptext: 'Escolha uma opção acima ou use o formulário abaixo para entrar em contato!', links: [] }]);
 
   return (
-    <S.ContactSection>
+    <S.ContactSection id="contact">
       <S.QuestionArea>
-
         <S.Dropdown>
-          <S.DropdownButton>DO QUE VOCÊ PRECISA? <img src={ArrowDown} alt="" /></S.DropdownButton>
+          <S.DropdownButton>
+            DO QUE VOCÊ PRECISA?
+            <img src={ArrowDown} alt="" />
+          </S.DropdownButton>
           <S.DropdownContent>
             {contactOptions.map((option, index) =>
               <button
@@ -32,11 +34,11 @@ const ContactSection = () => {
         </S.Dropdown>
         {content.map(text => (
           <S.QuestionContent>
-            <S.HelpText className="help-text">{text.helptext}</S.HelpText>
+            <S.HelpText>{text.helptext}</S.HelpText>
             <S.LinkContainer>
-              {text.links.map(link => (
+              {text.links.map((link, index) => (
                 <S.Link>
-                  <a className="link" href={link.href}>
+                  <a className="link" href={link.href} key={index}>
                     {link.name}
                   </a>
                 </S.Link>
