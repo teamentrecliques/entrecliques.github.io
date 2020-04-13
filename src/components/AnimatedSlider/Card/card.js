@@ -29,7 +29,7 @@ const Card = props => {
     <S.Card>
       <S.CardContent>
         {props.data.map((content, index) => <S.CardItem key={index}>
-            <a href={content.link} target="_blank" id={content.id}>{content.title}</a>
+            <a href={content.link} target="_blank" rel="noopener noreferrer" id={content.id}>{content.title}</a>
             <S.CardDesc className="card-desc">{content.description}</S.CardDesc>
         </S.CardItem>)}
       </S.CardContent>

@@ -44,7 +44,7 @@ const ContactSection = () => {
             <S.LinkContainer>
               {text.links.map((link, index) => (
                 <S.Link key={index}>
-                  <a id={link.id} className="link" href={link.href}>
+                  <a id={link.id} className="link" target="_blank" rel="noopener noreferrer" href={link.href}>
                     {link.name}
                   </a>
                 </S.Link>
