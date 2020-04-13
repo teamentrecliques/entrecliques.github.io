@@ -24,16 +24,16 @@ const Footer = () => (
         </p>
       </S.AddressContainer>
       <S.SocialContainer>
-        <a href="#">
+        <a href="https://pt-br.facebook.com/entrecliques" id="social-facebook">
           <img src={Icon.facebook} alt="" />
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/qentrecliques" id="social-instagram">
           <img src={Icon.instagram} alt="" />
         </a>
-        <a href="#">
+        <a href="https://api.whatsapp.com/send?phone=5511948583630" id="social-whatsapp">
           <img src={Icon.whatsapp} alt="" />
         </a>
-        <a href="#">
+        <a href="https://www.linkedin.com/company/entrecliques/" id="social-linkedin">
           <img src={Icon.likedin} alt="" />
         </a>
         <p>(15) 3527-2005 | (11) 94858-3630</p>
