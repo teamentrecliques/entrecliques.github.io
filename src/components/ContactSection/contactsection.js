@@ -5,6 +5,7 @@ import contactImage from '../../images/contact.svg';
 import Form from './Form/form';
 import ArrowDown from '../../images/arrowdown.svg';
 import { FormArea } from './contactsection.styled';
+import Loader from './Loader/loader';
 
 const ContactSection = () => {
   const [content, setContent] = useState([
@@ -53,10 +54,7 @@ const ContactSection = () => {
         ))}
       </S.QuestionArea>
       <FormArea>
-
-
-        <Form/>
-
+        <Form />
       </FormArea>
       <S.Image src={contactImage} alt="" />
     </S.ContactSection>
