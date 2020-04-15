@@ -12,6 +12,10 @@ export const MainSection = styled(BackgroundImage)`
   padding: 4rem 8rem;
   width: 100%;
 
+  img {
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
   @media screen and ${Breakpoints.mobile} {
   }
 
@@ -25,6 +29,17 @@ export const MainSection = styled(BackgroundImage)`
 
     img {
       display: none;
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
 `;
