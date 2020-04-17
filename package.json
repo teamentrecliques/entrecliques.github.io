@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@rooks/use-visibility-sensor": "^3.6.0",
     "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "chroma-js": "^2.1.0",

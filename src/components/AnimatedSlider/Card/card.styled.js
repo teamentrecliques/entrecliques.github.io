@@ -10,13 +10,13 @@ export const CardDesc = styled.div`
   line-height: 120%;
   margin-bottom: 0.25rem;
   margin-right: 1.25rem;
-  padding: 0.5rem;
+  padding: 1rem;
   position: absolute;
   right: 100%;
   top: 0;
   transition: opacity 300ms ease;
-  width: 12rem;
-  z-index: 9999;
+  width: 20rem;
+  z-index: 999999;
 
   &:after {
     border: 12px solid transparent;
@@ -107,6 +107,7 @@ export const Card = styled.div`
   position: relative;
   transition: box-shadow 300ms ease;
   max-width: 25rem;
+  z-index: 99999;
 
   .image {
     z-index: 99;
