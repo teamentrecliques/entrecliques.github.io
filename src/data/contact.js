@@ -28,6 +28,7 @@ const contactOptions = [
       { href: 'https://api.whatsapp.com/send?phone=5511948583630&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20consultoria%20personalizada.', name: 'Consultoria', id: 'help_item-consultoria' },
       { href: 'https://pay.hotmart.com/G22607273X', name: 'Curso "Criando artes com o Canva"', id: 'help_item-curso-canva' },
       { href: 'https://pay.hotmart.com/C16987506J', name: 'Curso "Eu o Google e o Meu Negócio"', id: 'help_item-curso-gmb' },
+      { href: 'https://entrecliques.com.br/planner/', name: 'Planner de Conteúdos', id: 'help_item-planner' },
     ],
   },
 ];

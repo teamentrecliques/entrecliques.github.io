@@ -107,6 +107,12 @@ export const products = [
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
         id: 'card-curso-gmb-pc',
       },
+      {
+        title: 'Planner para Conteúdos',
+        link: 'https://entrecliques.com.br/planner/',
+        description: 'Planeje suas ações e obtenha melhores resultados nos seus canais de Facebook e Instagram.',
+        id: 'card-planner',
+      },
     ],
   },
 ];
