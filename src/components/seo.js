@@ -17,8 +17,10 @@ function SEO({ description, lang, meta, title }) {
         site {
           siteMetadata {
             title
+            shortName
             description
             author
+            keywords
           }
         }
       }
@@ -40,6 +42,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `keywords`,
+          content: site.siteMetadata.keywords,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -50,6 +56,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.image,
         },
         {
           name: `twitter:card`,
@@ -73,7 +83,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pt-br`,
   meta: [],
   description: ``,
 };
