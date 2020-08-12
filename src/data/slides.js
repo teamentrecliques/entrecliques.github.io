@@ -55,7 +55,7 @@ export const products = [
       },
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
-        link: 'https://pay.hotmart.com/C16987506J',
+        link: 'http://entrecliques.com.br/curso-google-meu-negocio/',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
         id: 'card-curso-gmb-pl',
       },
@@ -103,7 +103,7 @@ export const products = [
       },
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
-        link: 'https://pay.hotmart.com/C16987506J',
+        link: 'http://entrecliques.com.br/curso-google-meu-negocio/',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
         id: 'card-curso-gmb-pc',
       },
