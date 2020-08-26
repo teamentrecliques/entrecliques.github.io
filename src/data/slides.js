@@ -55,7 +55,7 @@ export const products = [
       },
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
-        link: 'https://pay.hotmart.com/C16987506J',
+        link: 'https://entrecliques.com.br/curso-google-meu-negocio/',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
         id: 'card-curso-gmb-pl',
       },
@@ -96,14 +96,14 @@ export const products = [
         id: 'card-consultoria',
       },
       {
-        title: 'Curso "Criando artes com o Canva"',
-        link: 'https://pay.hotmart.com/G22607273X',
+        title: 'Curso "Faça TUDO com o Canva"',
+        link: 'https://entrecliques.com.br/curso-canva/',
         description: 'Identidade visual para o seu negócio! O Canva é uma ferramenta de criação online, rápida e fácil. Com ela, você pode criar por conta própria artes para as redes sociais da sua empresa. Deixe seus posts com uma cara mais profissional, aprenda o básico de design e promova visualmente o seu negócio.',
         id: 'card-curso-canva',
       },
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
-        link: 'https://pay.hotmart.com/C16987506J',
+        link: 'https://entrecliques.com.br/curso-google-meu-negocio/',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
         id: 'card-curso-gmb-pc',
       },
