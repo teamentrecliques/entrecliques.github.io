@@ -3,9 +3,11 @@ import Button from '../../Button/button';
 import * as S from './form.styled';
 import { $form } from '../../../services';
 import Loader from '../Loader/loader';
+import Input from 'react-phone-number-input/input'
 
 const Form = () => {
   const [state, setState] = useState({ loading: false, message: '' });
+  const [value, setValue] = useState('');
 
   function agentVerify() {
     let check = false;
@@ -65,6 +67,14 @@ const Form = () => {
       <form id="contact-form" onSubmit={onSubmitHandler}>
         <input name="name" placeholder="Seu nome" type="text" required />
         <input name="email" placeholder="Seu email" type="email" required />
+        <Input 
+          name="phone"
+          placeholder="Seu telefone"
+          type="text"
+          country="BR"
+          value={value}
+          onChange={setValue}
+          required />
         <input
           name="message"
           placeholder="Como podemos te ajudar?"
