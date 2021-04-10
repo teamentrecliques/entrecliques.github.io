@@ -2,10 +2,10 @@ const contactOptions = [
   {
     topic: 'Quero dar visibilidade ao meu negócio!',
     helptext:
-      'Está na hora de um posicionamento online estratégico! Confira nossos materiais GRATUITOS!',
+      'Está na hora de um posicionamento online estratégico! Confira nossos materiais para te ajudar:',
     id: 'help-posicionamento-online',
     links: [
-      { href: 'http://entrecliques.com.br/psnl/', name: 'Plano de Sobrevivência', id: 'help_item-psnl',},
+      { href: 'https://dozeroaoresultado.com.br', name: 'Método "Do Zero ao Resultado"', id: 'help_item-metodo',},
       { href: 'https://www.youtube.com/playlist?list=PLgXVj7R15asAKB1IDnzs3f-gbiIT_vPz7', name: 'Semana Digital do Varejo', id: 'help_item-sdv' },
     ],
   },
@@ -26,9 +26,10 @@ const contactOptions = [
     id: 'help-aprender-midias',
     links: [
       { href: 'https://api.whatsapp.com/send?phone=5511948583630&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20consultoria%20personalizada.', name: 'Consultoria', id: 'help_item-consultoria' },
-      { href: 'https://pay.hotmart.com/G22607273X', name: 'Curso "Criando artes com o Canva"', id: 'help_item-curso-canva' },
+      { href: 'https://canva.dozeroaoresultado.com.br', name: 'Curso "Faça TUDO com o Canva"', id: 'help_item-curso-canva' },
       { href: 'http://entrecliques.com.br/curso-google-meu-negocio/', name: 'Curso "Eu o Google e o Meu Negócio"', id: 'help_item-curso-gmb' },
-      { href: 'https://entrecliques.com.br/planner/', name: 'Planner de Conteúdos', id: 'help_item-planner' },
+      { href: 'https://planner.dozeroaoresultado.com.br', name: 'Planner de Conteúdos', id: 'help_item-planner' },
+      { href: 'https://dozeroaoresultado.com.br', name: 'Método "Do Zero ao Resultado"', id: 'help_item-metodo-1',},
     ],
   },
 ];

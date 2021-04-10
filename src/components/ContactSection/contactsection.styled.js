@@ -3,7 +3,9 @@ import Breakpoints from '../../styles/global.breakpoints';
 
 export const LinkContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   min-height: 2rem;
   width: 100%;
 
@@ -20,7 +22,6 @@ export const Link = styled.div`
   box-shadow: 3px 3px 0px 0px #ccc;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-left: 0.5rem;
   padding: 0.5rem 1rem;
   position: relative;
   transition: all 300ms ease;

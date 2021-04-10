@@ -42,7 +42,7 @@ export const products = [
     card: [
       {
         title: 'Plano de Sobrevivência',
-        link: 'http://entrecliques.com.br/psnl/',
+        link: 'https://entrecliques.com.br/psnl/',
         description:
           'Um Guia passo a passo GRATUITO que você pode implementar AGORA MESMO! Prepare seu Negócio Local para enfrentar um momento difícil.',
         id: 'card-psnl',
@@ -55,7 +55,7 @@ export const products = [
       },
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
-        link: 'http://entrecliques.com.br/curso-google-meu-negocio/',
+        link: 'https://gmn.dozeroaoresultado.com.br',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
         id: 'card-curso-gmb-pl',
       },
@@ -90,26 +90,32 @@ export const products = [
       'Soluções e estratégias de posicionamento online para Negócios Locais alavancarem suas vendas. O VarejoLab é um projeto de presença online para varejistas que buscam construção e definição de público, além de estabelecimento de valores da marca. Empresas físicas com resultados digitais!',
     card: [
       {
+        title: 'Método "Do Zero ao Resultado"',
+        link: 'https://dozeroaoresultado.com.br',
+        description: 'Um método para VOCÊ conquistar seus RESULTADOS no Digital!',
+        id: 'card-metodo-dzr',
+      },
+      {
         title: "Consultoria Personalizada",
         link: 'https://api.whatsapp.com/send?phone=5511948583630&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20consultoria%20personalizada.',
         description: 'Consultoria personalizada e pensada para te ajudar a planejar estrategicamente as ações digitais da sua empresa. Definindo objetivo e público, métodos, técnicas e ferramentas.',
         id: 'card-consultoria',
       },
       {
-        title: 'Curso "Criando artes com o Canva"',
-        link: 'https://pay.hotmart.com/G22607273X',
+        title: 'Curso "Faça TUDO com o Canva"',
+        link: 'https://canva.dozeroaoresultado.com.br',
         description: 'Identidade visual para o seu negócio! O Canva é uma ferramenta de criação online, rápida e fácil. Com ela, você pode criar por conta própria artes para as redes sociais da sua empresa. Deixe seus posts com uma cara mais profissional, aprenda o básico de design e promova visualmente o seu negócio.',
         id: 'card-curso-canva',
-      },
+      },      
       {
         title: 'Curso "Eu o Google e o Meu Negócio"',
-        link: 'http://entrecliques.com.br/curso-google-meu-negocio/',
+        link: 'https://gmn.dozeroaoresultado.com.br',
         description: 'O Google Meu Negócio pode ser o seu MELHOR VENDEDOR! Uma ferramenta gratuita com enorme potencial e pouco explorada. Neste curso, você vai aprender como a sua empresa pode se destacar, explorando o máximo do Google Meu Negócio.',
         id: 'card-curso-gmb-pc',
       },
       {
         title: 'Planner para Conteúdos',
-        link: 'https://entrecliques.com.br/planner/',
+        link: 'https://planner.dozeroaoresultado.com.br',
         description: 'Planeje suas ações e obtenha melhores resultados nos seus canais de Facebook e Instagram.',
         id: 'card-planner',
       },
