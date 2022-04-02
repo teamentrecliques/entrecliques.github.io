@@ -109,11 +109,13 @@ export const CustomSlider = styled(Slider)`
 
   @media screen and ${Breakpoints.mobileSm} {
     a.previousButton {
+      top: 95%;
       left: 20%;
       padding: 0.5rem 4.5rem 0.5rem 0.5rem;
     }
 
     a.nextButton {
+      top: 95%;
       padding: 0.5rem 0.5rem 0.5rem 4.5rem;
       left: 52%;
     }
@@ -121,6 +123,14 @@ export const CustomSlider = styled(Slider)`
     .slide {
       padding: 9rem 2rem 4rem 2rem;
       flex-direction: column;
+
+      &.card-slide {
+        height: 100%;
+      }
+
+      .card-image {
+        height: 100%;
+      }
 
       > div {
         width: 100%;

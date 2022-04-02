@@ -66,7 +66,7 @@ const IndexPage = () => {
       <Section title="produtos" id="products">
         <AnimatedSlider color={DefaultTheme.secondary.hex()} data={Data.products}>
           {Data.products.map((slide, index) => (
-            <div key={index}>
+            <div className='card-slide' key={index}>
               <TextContent
                 title={slide.title}
                 bodycolor={DefaultTheme.primary.hex()}
@@ -75,7 +75,7 @@ const IndexPage = () => {
               >
                 {parse(slide.description)}
               </TextContent>
-              <div>
+              <div className='card-image'>
                 <Card image={slide.image} data={slide.card} />
               </div>
             </div>

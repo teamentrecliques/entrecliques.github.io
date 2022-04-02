@@ -150,7 +150,8 @@ export const Card = styled.div`
   } */
 
   @media screen and ${Breakpoints.mobileSm} {
-    height: 20rem;
+    height: 75%;
+    min-height: 8rem;
     width: 100%;
 
     &:after {
