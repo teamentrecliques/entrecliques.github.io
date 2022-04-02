@@ -3,7 +3,7 @@ import * as S from './mainsectiontext.styled';
 
 const MainSectionText = () => {
   return (
-    <S.Text>Estratégias digitais com foco em performance. A presença online do seu Negócio com o melhor do Marketing Digital.</S.Text>
+    <S.Text>Somos especializados em posicionar Empresas Locais “frente a frente” com seu cliente no momento da compra através de Estratégias Online.</S.Text>
   );
 }
 

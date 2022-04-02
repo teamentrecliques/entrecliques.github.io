@@ -30,6 +30,20 @@ export const StrongText = styled.p`
   }
 `;
 
+export const MidText = styled.p`
+  color: ${props => props.theme.primary};
+  font-size: 3rem;
+  font-weight: 700;
+
+  @media screen and (max-width: 1079px) {
+    font-size: 2.5rem;
+  }
+
+  &.secondary {
+    color: ${props => props.theme.secondary};
+  }
+`;
+
 export const RegularText = styled.p`
   color: ${props => props.theme.secondary};
   font-size: 4rem;
@@ -37,5 +51,15 @@ export const RegularText = styled.p`
 
   @media screen and (max-width: 1079px) {
     font-size: 3.5rem;
+  }
+`;
+
+export const SmallText = styled.p`
+  color: ${props => props.theme.secondary};
+  font-size: 3rem;
+  font-weight: 400;
+
+  @media screen and (max-width: 1079px) {
+    font-size: 2.5rem;
   }
 `;

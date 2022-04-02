@@ -66,7 +66,7 @@ export const CardItem = styled.div`
     }
   }
 
-  &:hover {
+  /* &:hover {
     border-color: #ffb320;
     box-shadow: 6px 6px 0px 0px #ffb320;
     margin-right: 0.3rem;
@@ -74,7 +74,7 @@ export const CardItem = styled.div`
     ${CardDesc} {
       opacity: 1;
     }
-  }
+  } */
 `;
 
 export const CardContent = styled.div`
@@ -114,7 +114,7 @@ export const Card = styled.div`
     height: 100%;
   }
 
-  &:after {
+  /* &:after {
     clip-path: polygon(0 50%, 100% 0, 100% 100%, 0% 100%);
     background-color: ${props => props.theme.secondary.hex()};
     bottom: 0;
@@ -124,9 +124,9 @@ export const Card = styled.div`
     transition: height 300ms ease, clip-path 300ms ease;
     width: 100%;
     z-index: 999;
-  }
+  } */
 
-  &:hover {
+  /* &:hover {
     box-shadow: 20px 20px 0px 0px ${props => props.theme.primary.alpha(1)};
 
     ${SeeMore} {
@@ -147,10 +147,10 @@ export const Card = styled.div`
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     height: 100%;
     opacity: 0.9;
-  }
+  } */
 
   @media screen and ${Breakpoints.mobileSm} {
-    height: 10rem;
+    height: 20rem;
     width: 100%;
 
     &:after {

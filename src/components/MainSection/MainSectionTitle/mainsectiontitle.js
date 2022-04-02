@@ -6,9 +6,9 @@ import * as S from './mainsectiontitle.styled';
 const MainSectionTitle = () => (
   <S.Container>
     <S.TopText>está buscando</S.TopText>
-    <S.StrongText className="secondary">Melhores</S.StrongText>
-    <S.StrongText>Resultados</S.StrongText>
-    <S.RegularText>Online?</S.RegularText>
+    <S.StrongText className="secondary">Melhorar</S.StrongText>
+    <S.MidText>Sua presença</S.MidText>
+    <S.SmallText>Online?</S.SmallText>
   </S.Container>
 );
 

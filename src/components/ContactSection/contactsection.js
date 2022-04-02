@@ -18,7 +18,7 @@ const ContactSection = () => {
 
   return (
     <S.ContactSection id="contact">
-      <S.QuestionArea>
+      {/* <S.QuestionArea>
         <S.Dropdown>
           <S.DropdownButton>
             DO QUE VOCÊ PRECISA?
@@ -52,11 +52,11 @@ const ContactSection = () => {
             </S.LinkContainer>
           </S.QuestionContent>
         ))}
-      </S.QuestionArea>
+      </S.QuestionArea> */}
       <FormArea>
         <Form />
       </FormArea>
-      <S.Image src={contactImage} alt="" />
+      {/* <S.Image src={contactImage} alt="" /> */}
     </S.ContactSection>
   );
 };

@@ -8,8 +8,8 @@ export const MainSection = styled(BackgroundImage)`
   height: 100vh;
   justify-content: space-between;
   min-height: 768px;
-  overflow-x: hidden;
-  padding: 4rem 8rem;
+  padding: 4rem 6rem;
+  overflow: hidden !important;
   width: 100%;
 
   img {
@@ -21,6 +21,7 @@ export const MainSection = styled(BackgroundImage)`
 
   @media screen and ${Breakpoints.mobileSm} {
     height: auto;
+    overflow: hidden !important;
     flex-direction: column;
     justify-content: space-around;
     min-height: 0;

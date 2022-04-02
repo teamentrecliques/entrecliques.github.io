@@ -27,13 +27,13 @@ const Card = props => {
 
   return (
     <S.Card>
-      <S.CardContent>
+      {/* <S.CardContent>
         {props.data.map((content, index) => <S.CardItem key={index}>
             <a href={content.link} target="_blank" rel="noopener noreferrer" id={content.id}>{content.title}</a>
             <S.CardDesc className="card-desc">{content.description}</S.CardDesc>
         </S.CardItem>)}
       </S.CardContent>
-      <S.SeeMore className="see-more">Ver mais [+]</S.SeeMore>
+      <S.SeeMore className="see-more">Ver mais [+]</S.SeeMore> */}
       <BackgroundImage
         tag="div"
         className="image"

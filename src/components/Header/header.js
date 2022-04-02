@@ -8,7 +8,7 @@ const Header = () => {
     query {
       file(relativePath: { eq: "etc-logo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 348, quality: 100) {
+          fluid(maxWidth: 310, quality: 100) {
             ...GatsbyImageSharpFluid
             presentationWidth
           }

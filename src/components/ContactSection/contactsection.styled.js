@@ -193,7 +193,6 @@ export const ContactSection = styled.section`
   background-color: ${props => props.theme.dark.hex()};
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   justify-content: space-between;
   position: relative;
   overflow: hidden;

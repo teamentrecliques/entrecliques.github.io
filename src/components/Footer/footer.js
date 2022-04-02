@@ -11,13 +11,6 @@ const Footer = () => {
         <S.Img src={etcLogo} />
         <S.AddressContainer>
           <p>
-            Alameda Lorena, 514-B
-            <br />
-            Jardim Paulista, São Paulo - SP 01424-00
-            <br />
-            01424-002
-          </p>
-          <p>
             R. Padre Albuquerque, 1111 - 1º Andar
             <br />
             Centro, Itapetininga - SP
@@ -43,7 +36,7 @@ const Footer = () => {
       </div>
       <div>
         <S.MapContainer>
-          <S.MapIframe src="https://www.google.com/maps/d/u/0/embed?mid=19iE1VWBzkIxPxjQbMOwM-Tb86_K985KZ"></S.MapIframe>
+          <S.MapIframe src="https://maps.google.com/maps?q=rua%20padre%20albuquerque,%201111&t=&z=15&ie=UTF8&iwloc=&output=embed" />
         </S.MapContainer>
       </div>
     </S.Footer>
@@ -51,3 +44,5 @@ const Footer = () => {
 }
 
 export default Footer;
+
+

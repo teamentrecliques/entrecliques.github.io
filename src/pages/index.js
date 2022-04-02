@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import parse from 'html-react-parser';
 import * as Data from '../data/slides';
 import { $anchor } from '../utils';
 
@@ -39,7 +40,7 @@ const IndexPage = () => {
           <MainSectionText />
           <Button anchor="contact" id="btn-cta">Solicitar ajuda</Button>
         </div>
-        <img src={mainImage} alt="" />
+        <img src={mainImage} style={{ overflow: 'hidden' }} alt="" />
         <BgCurve />
       </MainSection>
 
@@ -72,7 +73,7 @@ const IndexPage = () => {
                 titlecolor={DefaultTheme.secondary.hex()}
                 logo={slide.logo}
               >
-                {slide.description}
+                {parse(slide.description)}
               </TextContent>
               <div>
                 <Card image={slide.image} data={slide.card} />

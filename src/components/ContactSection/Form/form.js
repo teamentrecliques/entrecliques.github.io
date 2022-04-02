@@ -40,14 +40,14 @@ const Form = () => {
 
     $form
       .submit(payload)
-      .then(_ => {
+      .then(() => {
         setState(prev => ({
           ...prev,
           message: 'Mensagem enviada com sucesso!',
         }));
       })
       .catch(err => {
-        if (err.status !== 409) {
+        if (err?.status !== 409) {
           setState(prev => ({
             ...prev,
             message:
