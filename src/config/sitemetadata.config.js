@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Entrecliques - Digital Media Intelligence`,
+  title: `Entrecliques - Marketing Local`,
   shortName: `Entrecliques`,
   description: `Somos especializados em posicionar Empresas Locais “frente a frente” com seu cliente no momento da compra através de Estratégias Online.`,
   author: `@entrecliques`,
