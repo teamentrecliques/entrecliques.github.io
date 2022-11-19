@@ -6,8 +6,8 @@ const headers = {
 };
 
 const config = {
-  development: { baseURL: "https://etc-mail-services.herokuapp.com/api", headers },
-  production: { baseURL: "https://etc-mail-services.herokuapp.com/api", headers }
+  development: { baseURL: "https://etc-mail-services.onrender.com/api", headers },
+  production: { baseURL: "https://etc-mail-services.onrender.com/api", headers }
 };
 
 export default Object.freeze(config[mode]);
